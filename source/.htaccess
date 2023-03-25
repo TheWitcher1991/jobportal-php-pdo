@@ -1,0 +1,592 @@
+# .htaccess
+
+# ######################################################################
+# # CROSS-ORIGIN                                                       #
+# ######################################################################
+
+DirectoryIndex index.php
+
+Options -Indexes -Includes -ExecCGI
+
+# ----------------------------------------------------------------------
+# | Cross-origin requests                                              |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Cross-origin images                                                |
+# ----------------------------------------------------------------------
+<IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
+            SetEnvIf Origin ":" IS_CORS
+            Header set Access-Control-Allow-Origin "*" env=IS_CORS
+        </FilesMatch>
+    </IfModule>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Cross-origin web fonts                                             |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    <FilesMatch "\.(eot|otf|tt[cf]|woff|woff2?)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Cross-origin resource timing                                       |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set Timing-Allow-Origin: "*"
+</IfModule>
+
+Header always edit Set-Cookie (.*) "$1; HTTPOnly"
+
+# ######################################################################
+# # ERRORS                                                             #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Custom error messages/pages                                        |
+# ----------------------------------------------------------------------
+ErrorDocument 404 http://stgaujob.ru/404
+
+# ----------------------------------------------------------------------
+# | Error prevention                                                   |
+# ----------------------------------------------------------------------
+Options -MultiViews
+
+# ######################################################################
+# # INTERNET EXPLORER                                                  #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Document modes                                                     |
+# ----------------------------------------------------------------------
+<IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+        BrowserMatch MSIE ie
+        Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+    </IfModule>
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<IfModule mod_headers.c>
+    Header append Vary User-Agent
+</IfModule>
+
+# ######################################################################
+# # MEDIA TYPES AND CHARACTER ENCODINGS                                #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Media types                                                        |
+# ----------------------------------------------------------------------
+
+<IfModule mod_mime.c>
+
+  # Data interchange
+
+    AddType application/atom+xml                        atom
+    AddType application/json                            json map topojson
+    AddType application/ld+json                         jsonld
+    AddType application/rss+xml                         rss
+    AddType application/geo+json                        geojson
+    AddType application/rdf+xml                         rdf
+    AddType application/xml                             xml
+
+
+  # JavaScript
+
+    AddType text/javascript                             js mjs
+
+
+  # Manifest files
+
+    AddType application/manifest+json                   webmanifest
+    AddType application/x-web-app-manifest+json         webapp
+    AddType text/cache-manifest                         appcache
+
+
+  # Media files
+
+    AddType audio/mp4                                   f4a f4b m4a
+    AddType audio/ogg                                   oga ogg opus
+    AddType image/bmp                                   bmp
+    AddType image/svg+xml                               svg svgz
+    AddType image/webp                                  webp
+    AddType video/mp4                                   f4v f4p m4v mp4
+    AddType video/ogg                                   ogv
+    AddType video/webm                                  webm
+    AddType video/x-flv                                 flv
+
+    AddType image/x-icon                                cur ico
+
+
+  # WebAssembly
+
+    AddType application/wasm                            wasm
+
+
+  # Web fonts
+
+    AddType font/woff                                   woff
+    AddType font/woff2                                  woff2
+    AddType application/vnd.ms-fontobject               eot
+    AddType font/ttf                                    ttf
+    AddType font/collection                             ttc
+    AddType font/otf                                    otf
+
+
+  # Other
+
+    AddType application/octet-stream                    safariextz
+    AddType application/x-bb-appworld                   bbaw
+    AddType application/x-chrome-extension              crx
+    AddType application/x-opera-extension               oex
+    AddType application/x-xpinstall                     xpi
+    AddType text/calendar                               ics
+    AddType text/markdown                               markdown md
+    AddType text/vcard                                  vcard vcf
+    AddType text/vnd.rim.location.xloc                  xloc
+    AddType text/vtt                                    vtt
+    AddType text/x-component                            htc
+
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Character encodings                                                |
+# ----------------------------------------------------------------------
+AddDefaultCharset utf-8
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<IfModule mod_mime.c>
+
+    AddCharset utf-8 .appcache \
+                     .bbaw \
+                     .css \
+                     .htc \
+                     .html \
+                     .rss \
+                     .xml \
+                     .ics \
+                     .js \
+                     .json \
+                     .manifest \
+                     .map \
+                     .markdown \
+                     .md \
+                     .mjs \
+                     .topojson \
+                     .vtt \
+                     .vcard \
+                     .vcf \
+                     .webmanifest \
+                     .xloc
+
+</IfModule>
+
+# ######################################################################
+# # REWRITES                                                           #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Rewrite engine                                                     |
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    Options +FollowSymlinks
+
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-s 
+    RewriteCond %{REQUEST_FILENAME} !-l 
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^sitemap(.*)$ sitemap.php [L,QSA]
+    RewriteRule ^humans(.*)$ humans.txt [L,QSA]
+    RewriteRule ^manifest(.*)$ manifest.json [L,QSA]
+    RewriteRule ^robots(.*)$ robots.txt [L,QSA]
+    RewriteRule ^static/(.*)$ static/$1 [L,QSA]
+
+    RewriteRule ^.*$ index.php [L,QSA]
+
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<IfModule mod_rewrite.c>
+
+    RewriteCond %{HTTP_REFERER} !^$
+    RewriteCond %{HTTP_REFERER} !^http://stgaujob\.ru/ [NC]
+    RewriteCond %{HTTP_REFERER} !^https://stgaujob\.ru/ [NC]
+
+    RewriteRule \.(jpeg|png|bmp|gif|jpg|js|css)$ - [F]
+
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    Options +FollowSymLinks
+
+    RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+    RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+
+    RewriteRule ^(.*)$ /**/*.php [F,L]
+
+</IfModule>
+
+# ######################################################################
+# # SECURITY                                                           #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Disabled logs                                                       |
+# ----------------------------------------------------------------------
+
+<FilesMatch ".(htaccess|htpasswd|bak|ini|log|sh|inc|config|psd|fla|ai)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# ----------------------------------------------------------------------
+# | Clickjacking                                                       |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "DENY"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Content Security Policy (CSP)                                      |
+# ----------------------------------------------------------------------
+#<IfModule mod_headers.c>
+    # Header set Content-Security-Policy "default-src 'self'; script-src https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdn.jsdelivr.net/ https://cdnjs.cloudflare.com https://use.fontawesome.com/releases/ https://cdnjs.com/ 'self' 'unsafe-inline'; style-src https://cdnjs.cloudflare.com/ https://cdn.materialdesignicons.com/ https://use.fontawesome.com/releases/ 'self' 'unsafe-inline'; font-src https://cdnjs.cloudflare.com/ https://cdn.materialdesignicons.com https://fonts.gstatic.com/ https://use.fontawesome.com/releases/ 'self' 'unsafe-inline'; connect-src https://yandex.ru/portal https://redirect.appmetrica.webvisor.com/ https://mc.yandex.ru/ https://mc.webvisor.org/ https://lalablah.com/watch/ https://passport.yandex.ua/ 'self' 'unsafe-inline'; img-src https://mc.yandex.ru/ https://mc.webvisor.org 'self' 'unsafe-inline'; frame-src https://www.google.com/ 'self' 'unsafe-inline'"
+#</IfModule>
+
+# ----------------------------------------------------------------------
+# | File access                                                        |
+# ----------------------------------------------------------------------
+<IfModule mod_autoindex.c>
+    Options All -Indexes
+</IfModule>
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<IfModule mod_authz_core.c>
+    <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|orig|psd|sh|sql|sw[op])|~)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Reducing MIME type security risks                                  |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Reflected Cross-Site Scripting (XSS) attacks                       |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Server-side technology information                                 |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header unset X-Powered-By
+    Header always unset X-Powered-By
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Server software information                                        |
+# ----------------------------------------------------------------------
+ServerSignature Off
+
+<IfModule mod_headers.c>
+	Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# ######################################################################
+# # WEB PERFORMANCE                                                    #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Compression                                                        |
+# ----------------------------------------------------------------------
+
+<IfModule mod_deflate.c>
+
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE "application/atom+xml" \
+                                      "application/javascript" \
+                                      "application/json" \
+                                      "application/ld+json" \
+                                      "application/manifest+json" \
+                                      "application/rdf+xml" \
+                                      "application/rss+xml" \
+                                      "application/schema+json" \
+                                      "application/geo+json" \
+                                      "application/vnd.ms-fontobject" \
+                                      "application/wasm" \
+                                      "application/x-font-ttf" \
+                                      "application/x-javascript" \
+                                      "application/x-web-app-manifest+json" \
+                                      "application/xhtml+xml" \
+                                      "application/xml" \
+                                      "font/eot" \
+                                      "font/opentype" \
+                                      "font/otf" \
+                                      "image/bmp" \
+                                      "image/svg+xml" \
+                                      "image/vnd.microsoft.icon" \
+                                      "text/cache-manifest" \
+                                      "text/calendar" \
+                                      "text/css" \
+                                      "text/html" \
+                                      "text/javascript" \
+                                      "text/plain" \
+                                      "text/markdown" \
+                                      "text/vcard" \
+                                      "text/vnd.rim.location.xloc" \
+                                      "text/vtt" \
+                                      "text/x-component" \
+                                      "text/x-cross-domain-policy" \
+                                      "text/xml"
+
+    </IfModule>
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
+    <IfModule mod_mime.c>
+        AddEncoding gzip              svgz
+    </IfModule>
+
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | ETags                                                              |
+# ---------------------------------------------------------------------
+
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
+
+
+# ----------------------------------------------------------------------
+# | Webp pre-compressed content                                        |
+# ----------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
+    RewriteRule ^(path/to/your/images.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header append Vary Accept env=REDIRECT_accept
+</IfModule>
+AddType image/webp .webp
+
+# ----------------------------------------------------------------------
+# | GZip pre-compressed content                                        |
+# ----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+
+    RewriteCond %{HTTP:Accept-Encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -f
+    RewriteRule \.(css|ics|js|json|html|svg)$ %{REQUEST_URI}.gz [L]
+
+    RewriteRule \.gz$ - [E=no-gzip:1]
+
+    <FilesMatch "\.gz$">
+
+        <IfModule mod_mime.c>
+            RemoveType gz
+
+            AddType text/css              css.gz
+            AddType text/calendar         ics.gz
+            AddType text/javascript       js.gz
+            AddType application/json      json.gz
+            AddType text/html             html.gz
+            AddType text/php              php.gz
+            AddType image/svg+xml         svg.gz
+
+            AddCharset utf-8 .css.gz \
+                             .ics.gz \
+                             .js.gz \
+                             .json.gz
+        </IfModule>
+
+    </FilesMatch>
+
+    AddEncoding gzip .gz
+
+</IfModule>
+
+
+
+# ----------------------------------------------------------------------
+# | Content transformation                                             |
+# ----------------------------------------------------------------------
+
+<IfModule mod_headers.c>
+    Header merge Cache-Control "no-transform"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Cache expiration                                                   |
+# ----------------------------------------------------------------------
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 month"
+
+  # CSS
+
+    ExpiresByType text/css                              "access plus 1 year"
+
+
+  # Data interchange
+
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rdf+xml                   "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/schema+json               "access plus 0 seconds"
+    ExpiresByType application/geo+json                  "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/calendar                         "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+
+  # Favicon (cannot be renamed!) and cursor images
+
+    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+  # HTML
+
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+
+  # JavaScript
+
+    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType application/x-javascript              "access plus 1 year"
+    ExpiresByType text/javascript                       "access plus 1 year"
+
+
+  # Manifest files
+
+    ExpiresByType application/manifest+json             "access plus 1 week"
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+
+
+  # Markdown
+
+    ExpiresByType text/markdown                         "access plus 0 seconds"
+
+
+  # Media files
+
+    ExpiresByType audio/ogg                             "access plus 1 month"
+    ExpiresByType image/bmp                             "access plus 1 month"
+    ExpiresByType image/gif                             "access plus 1 month"
+    ExpiresByType image/jpeg                            "access plus 1 month"
+    ExpiresByType image/png                             "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+    ExpiresByType image/webp                            "access plus 1 month"
+    ExpiresByType video/mp4                             "access plus 1 month"
+    ExpiresByType video/ogg                             "access plus 1 month"
+    ExpiresByType video/webm                            "access plus 1 month"
+
+
+  # WebAssembly
+
+    ExpiresByType application/wasm                      "access plus 1 year"
+
+
+  # Web fonts
+
+    # Collection
+    ExpiresByType font/collection                       "access plus 1 month"
+
+    # Embedded OpenType (EOT)
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType font/eot                              "access plus 1 month"
+
+    # OpenType
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType font/otf                              "access plus 1 month"
+
+    # TrueType
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/ttf                              "access plus 1 month"
+
+    # Web Open Font Format (WOFF) 1.0
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/x-font-woff               "access plus 1 month"
+    ExpiresByType font/woff                             "access plus 1 month"
+
+    # Web Open Font Format (WOFF) 2.0
+    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType font/woff2                            "access plus 1 month"
+
+
+  # Other
+
+    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+
+</IfModule>
+
+# ######################################################################
+# # PHP                                                                #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Php_value config                                                   |
+# ----------------------------------------------------------------------
+php_value mbstring.internal_encoding UTF-8
+php_value mbstring.http_input UTF-8
+php_value mbstring.http_output UTF-8
+php_value mbstring.func_overload 2
+php_value session.cookie_httponly 1
+php_value session.hash_function "sha256"
+php_value opcache.revalidate_freq 0
+php_value session.save_path /tmp
+
+php_flag apc.cache_by_default on
+php_value mail.add_x_header 1
+php_value mail.log /home/u/stgau/public_html/source/log/mail.log

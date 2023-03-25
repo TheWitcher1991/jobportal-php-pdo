@@ -1,0 +1,153 @@
+@keyframes wave {
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    25% {
+        opacity: .1;
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+    }
+    50% {
+        opacity: .3;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+    }
+    75% {
+        opacity: .5;
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes reload {
+    from {
+        transform: rotate(0deg);
+    } to {
+              transform: rotate(360deg);
+      }
+}
+
+@keyframes load {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes spinRight {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinLeft {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes out {
+    0% {
+        width: 70%;
+        left: auto;
+        right: 0;
+    }
+    100% {
+        width: 0;
+        left: auto;
+        right: 0;
+    }
+}
+
+@keyframes in {
+    0% {
+        width: 0;
+        left: 0;
+        right: auto;
+    }
+    100% {
+        left: 0;
+        right: auto;
+        width: 70%;
+    }
+}
+
+@keyframes animation-open-popup {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animation-open-popup-2 {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+}
+
+@keyframes animation-open-popup-x {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*=============================
+    DOCUMENT & SECTION 
+=============================*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1d5deb;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eef9f2;
+}
+
+::-moz-scrollbar {
+    width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+    background: #1d5deb;
+}
+
+::-moz-scrollbar-track {
+    background-color: #eef9f2;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+summary {
+    display: list-item;
+}
+
+legend {
+    box-sizing: border-box; 
+    color: inherit; 
+    display: table; 
+    max-width: 100%; 
+    padding: 0; 
+    white-space: normal; 
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -apple-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -rim-box-sizing: border-box;
+    -xv-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul, menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    font: var(--font_doc);
+    flex-direction: column;
+    -webkit-text-size-adjust: 100%;
+    min-width: 320px;
+    /*(line-height: 1.4;*/
+    background: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.body-hidden {
+    overflow: hidden;
+}
+
+.container {
+    max-width: var(--container-w);
+    margin: 0 auto;
+}
+
+.container-mini {
+    max-width: 1200px;
+    margin: 0 auto;
+}

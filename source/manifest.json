@@ -1,0 +1,14 @@
+{
+  "lang": "ru",
+  "name": "Ставропольский ГАУ Агрокадры",
+  "description": "stgaujob.ru - сервис, который помогает выпускникам Ставропольского ГАУ найти работу, а заинтересованным компаниям найти персонал.",
+  "icons": [{
+    "src": "/static/image/favicon.ico",
+    "sizes": "64x64",
+    "type": "image/ico"
+  }],
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#FFFFFF"
+}

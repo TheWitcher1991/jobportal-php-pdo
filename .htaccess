@@ -1,0 +1,43 @@
+# ######################################################################
+# # REWRITES                                                           #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Rewrite engine                                                     |
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+
+    Options +FollowSymlinks
+
+    RewriteRule ^static/(.*)$ static/$1 [L,QSA]
+
+    RewriteRule ^(.*)$ source/$1
+
+<IfModule mod_rewrite.c>
+
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+	AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+	AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+	<FilesMatch "\.(ttf|otf|eot|svg)$" >
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>
+
+<ifModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 1 year"
+	ExpiresByType image/x-icon "access plus 1 year"
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType application/x-shockwave-flash "access plus 1 year"
+	ExpiresByType text/css "access plus 1 year"
+	ExpiresByType text/javascript "access plus 1 year"
+	ExpiresByType application/javascript "access plus 1 year"
+	ExpiresByType application/x-javascript "access plus 1 year"
+	ExpiresByType text/html "access plus 1 year"
+	ExpiresByType application/xhtml+xml "access plus 1 year"
+</ifModule>

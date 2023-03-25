@@ -1,0 +1,383 @@
+.table-wrapper {
+    background: #fff;
+    box-shadow: 0 15px 50px 0 rgb(160 163 189 / 10%);
+    padding: 26px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 0 26px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    position: relative;
+    white-space: nowrap;
+}
+
+.table-content {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-content .table-tr {
+    display: table-row;
+    border-collapse: collapse;
+}
+
+.table-content .table-tr > div {
+    display: table-cell;
+    max-width: 210px;
+    border-collapse: collapse;
+    border-bottom: 1px dashed #fff8dd;
+}
+
+.table-content .table-tr > div span {
+    margin: 0 16px 0 0;
+}
+
+.table-thead .table-tr > div > span,
+.table-thead .table-tr > div > a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 0.75rem 0.75rem 0;
+    font-size: 15px;
+    color: #1967D2;
+    font-weight: 600;
+    line-height: 30px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+
+.table-td-exp {
+    color: #696969;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.table-td-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1d1d1d;
+}
+
+.table-td-a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1d1d1d;
+}
+
+.table-td-a:hover {
+    color: #1967d2;
+}
+
+.table-thead .table-tr > div i {
+    margin: 0 6px 0 0;
+    font-size: 20px;
+}
+
+.table-tbody .table-tr > div {
+    padding: 0.75rem 0.75rem 0.75rem 0;
+}
+
+.table-tbody .table-tr > div > span {
+    padding: 0 0 0.75rem 0;
+    position: relative;
+}
+
+.table-content .table-thead {
+    display: table-header-group !important;
+    border-collapse: collapse;
+}
+
+.table-content .table-tbody {
+    display: table-row-group;
+    border-collapse: collapse;
+}
+
+.table-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0 0 0;
+}
+
+.table-paginator-all {
+    color: #555;
+    font-size: 14px;
+}
+
+.table-paginator-list {
+    display: flex;
+    align-items: center;
+}
+
+.table-paginator-list .page-active a, .table-paginator-list .page-active a:hover {
+    background: #1967d2;
+    color: #fff;
+}
+
+.table-paginator-list a {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    color: #5e6278;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.table-paginator-list a:hover {
+    background: #f4f6fa;
+    color: #009ef7;
+}
+
+
+.table-paginator-list > .page-active > a, .table-paginator-list > .page-active > a:hover {
+    background: #1967d2;
+    color: #fff;
+}
+
+.table-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 26px 0;
+}
+
+.table-title-right {
+    display: flex;
+    align-items: center;
+}
+
+.table-title-a {
+    border-radius: 6px;
+    margin: 0 0 0 12px;
+    padding: 9px 18px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.2s ease-in 0s;
+    background: #1967d2;
+}
+
+.table-title-a > i {
+    font-size: 16px;
+    margin: 0 6px 0 0;
+}
+
+.table-title-a:hover {
+    background: #0e4fa9;
+}
+
+.table-select-field {
+    position: relative;
+}
+
+.table-select-field > span {
+    border-radius: 6px;
+    padding: 9px 18px;
+    display: block;
+    text-align: center;
+    position: relative;
+    color: #1967d2;
+    cursor: pointer;
+    font-size: 15px;
+    background: #f1faff;
+    transition: all 0.2s ease-in 0s;
+}
+
+.table-select-field > span:hover {
+    background: #1967d2;
+    color: #fff;
+}
+
+.table-select-field i {
+    font-size: 16px;
+    margin: 0 3px 0 0;
+}
+
+
+.table-field label {
+    position: relative;
+}
+
+.table-field > label > input {
+    background: rgb(245, 246, 248);
+    color: rgb(5, 12, 38);
+    font-size: 14px;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in 0s;
+}
+
+.table-field > label > input:focus,
+.table-field > label > input:active {
+    border-color: #1967d2;
+    background: #FFFFFF;
+
+}
+
+.table-field button {
+    color: #181c32;
+    position: absolute;
+    background: 0;
+    border: 0;
+    font-size: 21px;
+    outline: none;
+    top: -3px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.table-field button:hover {
+    color: #1967d2;
+}
+
+.table-h1 {
+    color: #111;
+    font-size: 17px;
+    display: block;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.table-placeholder {
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    background: linear-gradient(100deg, #eceff1 30%, #f6f7f8 50%, #eceff1 70%);
+    background-size: 400%;
+    animation: load 1.2s ease-in-out infinite;
+    height: 25px;
+}
+
+.table-select-popup {
+    position: absolute;
+    display: none;
+    background: #ffffff;
+    z-index: 10;
+    box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+    top: 40px;
+    border-radius: 10px;
+    right: 0px;
+    width: 325px;
+}
+
+.table-select-popup > span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f4f4f4;
+    height: 55px;
+    padding: 0 22px;
+}
+
+.table-select-field > span.table-select-active {
+    background: #1967d2;
+    color: #FFFFFF;
+}
+
+.table-select-label {
+    padding: 22px;
+}
+
+.table-select-label label, .table-select-label span {
+    display: block;
+}
+
+.table-select-label span {
+    padding: 0 0 6px 0;
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    color: #3f4254;
+    font-weight: 500;
+}
+
+.table-select-label label:first-of-type {
+    margin: 0 0 22px 0;
+}
+
+.table-select-label select {
+    background: rgb(245, 246, 248);
+    color: rgb(5, 12, 38);
+    font-size: 14px;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    padding: 0 8px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in 0s;
+}
+
+.table-select-label select:focus,
+.table-select-label select:active {
+    background: #FFFFFF;
+    border-color: #1967d2;
+}
+
+.table-select-button {
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.table-select-button > button {
+    margin: 0 0 0 10px;
+    border: 0;
+    outline: none;
+    transition: all 0.2s linear;
+    padding: 9px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.table-select-button > button:first-of-type {
+    background: rgb(245, 246, 248);
+    color: rgb(5, 12, 38);
+}
+
+.table-select-button > button:last-of-type {
+    color: #fff;
+    background: #1967d2;
+}
+
+.table-select-button > button:first-of-type:hover {
+    color: #1967d2;
+    background: #f1faff;
+}
+
+.table-select-button > button:last-of-type:hover {
+    background: #1153af;
+}
+
+.table-scroll {
+    width: 100%;
+    margin: 16px 0 16px 0;
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+}

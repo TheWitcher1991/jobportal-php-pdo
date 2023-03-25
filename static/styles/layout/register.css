@@ -1,0 +1,481 @@
+.auth-span-a {
+    position: absolute;
+    font-size: 30px;
+    right: -60px;
+    top: 25px;
+    color: #1967d2;
+}
+
+.body-auth {
+    background: #f7f7f7;
+}
+
+.section-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container-bth {
+    width: 80%;
+    padding: 16px 0;
+}
+
+.auth-container-bth a {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.auth-container-bth i {
+    margin: 0 3px 0 0;
+    font-size: 17px;
+}
+
+.auth-container-bth a:hover {
+    text-decoration: underline;
+    color: #5d78ff;
+}
+
+.auth-section h1 {
+    margin: 0 0 16px 0;
+    color: #222;
+    font-size: 26px;
+}
+
+.section-auth .tabs-home {
+    background: #fff;
+    color: #444;
+    padding: 2rem 4rem;
+    width: 500px;
+    border-radius: 6px;
+    box-shadow: 0 0 80px 0 rgb(77 84 124 / 9%);
+}
+
+
+.tabs-item .tabs-form {
+    display: none;
+}
+
+.tabs-item > div.tabs-act {
+    display: block;
+}
+
+.tabs-li {
+    margin: 0 0 30px 0;
+    color: #444;
+    align-items: center;
+    font-size: 18px;
+    padding: 0;
+    display: flex;
+    
+}
+
+.log-r-t {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs-li > li {
+    width: 100%;
+}
+
+.tabs-li > li > a {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: 8px 0;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fbfbfb;
+    font-size: 14px;
+    color: #444;
+    border: 1px solid #cdd0d5;
+    text-align: center;
+    transition: linear 0.2s all;
+}
+
+.tabs-li > li:first-of-type > a {
+    border-radius: 4px 0 0 4px;
+}
+
+.tabs-li > li:last-of-type > a {
+    border-radius: 0 4px 4px 0;
+}
+
+.tabs-li > li > a.tabs-act {
+    color: #fff;
+    background: #5d78ff;
+    border-color: #5d78ff;
+}
+
+.tabs-li > li > a.tabs-act:hover {
+    background: #4c66ed;
+}
+
+.tabs-li > li > a:hover {
+    background: rgba( 24,111,201,0.07);
+}
+
+section.auth-section, div.auth-section {
+display: flex;
+align-items: center;
+width: 100%;
+height: 100%;
+    flex-direction: column;
+}
+
+section.auth-section-center, div.auth-section-center {
+    justify-content: center;
+}
+
+
+
+.auth-form {
+width: 100%;
+}
+
+.auth-img {
+width: 85%;
+    position: relative;
+    background-image: url(/static/image/logo/logo4.JPG);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 6px 0 0 6px;
+}
+
+.auth-img::before {
+    content: "";
+    background: /*#1d385873*/ #1d385866;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 0 0 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+div.auth-container-aut {
+    width: 45%;
+    height: fit-content;
+    position: relative;
+    background: #fff;
+    color: #444;
+    box-shadow: 0 0 80px 0 rgb(77 84 124 / 9%);
+}
+
+div.auth-container-aut-two {
+    width: 550px;
+}
+
+.label-block {
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+
+.form-push > div.push-wrap {
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+.form-push > div.push-wrap:last-of-type {
+    margin: 0;
+}
+
+.label-h1 {
+    font-weight: 400;
+}
+
+.push-ctx {
+    margin: 0 0 0 80px;
+}
+
+div.label-b-check {
+    font-size: 15px;
+    display: block;
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+div.label-push {
+    margin: 0 0 10px 0;
+}
+
+.label-block label {
+    font-size: 14px;
+    display: block;
+    padding: 0 0 6px 0;
+    position: relative;
+    display: flex;
+    font-weight: 500;
+    display: flex;
+    color: #333;
+}
+
+.label-block .error {
+    color: #ff4c4c;
+    font-size: 12px;
+    line-height: 14px;
+
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
+.label-block label span {
+    color: #ff4c4c;
+    display: block;
+
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 0 4px;
+}
+
+.label-block .label-arrow {
+    position: absolute;
+    right: 0;
+    top: 7%;
+    right: 12px;
+    color: #888;
+    font-size: 22px;
+}
+
+
+.label-block textarea {
+    resize : vertical;
+    min-width: 100px;
+}
+
+.label-block textarea,
+.label-block input,
+.label-block select {
+    font-size: 13px;
+    background-color: rgb(245, 246, 248);
+    color: inherit;
+    outline: none;
+    border: 2px solid transparent;
+    width: 100%;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    box-shadow: none;
+    color: rgb(5, 12, 38);
+    flex: 1;
+    transition: all 0.2s ease-in 0s;
+    appearance: none;
+}
+
+.label-flex-b-p {
+    display: flex;
+    align-items: center;
+}
+
+.label-flex-b-p span {
+    font-size: 18px;
+    color: #555;
+    margin: 0 0 0 6px;
+    display: block;
+}
+
+.label-block textarea.errors,
+.label-block input.errors,
+.label-block select.errors {
+    border-color: #ff4c4c;
+    background: rgba(255,22,46,.06);
+}
+
+.label-block textarea:hover,
+.label-block select:hover,
+.chat-label > input:hover,
+.label-block input:hover {
+    background: rgb(234, 236, 239);
+}
+
+.label-block select:focus,
+.label-block select:active,
+.label-block input:focus,
+.label-block input:active,
+.label-block textarea:focus,
+.label-block textarea:active,
+.chat-label > input:active,
+.chat-label > input:focus
+{
+    border-color: #5d78ff;
+    background: #fff;
+    /*background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);*/
+}
+
+.label-block-radio {
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.label-block-radio label {
+    font-size: 14px;
+    display: block;
+    padding: 0 0 6px 0;
+    position: relative;
+    display: flex;
+    font-weight: 500;
+    display: flex;
+    color: #333;
+}
+
+.label-radio-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.label-radio-block p {
+    margin: 10px 20px 0 0;
+}
+
+
+.f-n {
+    display: flex;
+    justify-content: space-between;
+}
+
+.au-fn {
+    width: 50%;
+}
+
+.au-fn-1 {
+    margin: 0 20px 35px 0;
+}
+
+.au-fn-2 {
+    margin: 0 0 35px 20px;
+}
+
+.label-b-info {
+    color: #777;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+
+.label-b-info a {
+    color: #777;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.label-block-a {
+    color: #1967d2;
+    display: inline-block;
+
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.label-block-a:hover {
+    color: #1255b2;
+}
+
+
+.label-select-block {
+    position: relative;
+}
+
+.profile-data .label-block label {
+    padding: 0 0 10px 0;
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    color: #3f4254;
+    font-weight: 500;
+}
+
+.profile-data .label-block textarea, .profile-data .label-block input, .profile-data .label-block select {
+    font-size: 14px;
+    background-color: rgb(245, 246, 248);
+    outline: none;
+    border: 2px solid transparent;
+    width: 100%;
+
+    padding: 13px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 0;
+    box-shadow: none;
+    color: rgb(5, 12, 38);
+    flex: 1;
+    transition: all 0.2s ease-in 0s;
+    appearance: none;
+}
+
+.profile-data .label-block textarea.errors,
+.profile-data .label-block input.errors,
+.profile-data .label-block select.errors {
+    border-color: #ff4c4c;
+    background: rgba(255,22,46,.06);
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #334155;
+}
+
+.label-block input:disabled,
+.label-block select:disabled,
+.label-block textarea:disabled {
+    cursor: no-drop;
+    background: rgb(232, 240, 254);
+    border: 0;
+    resize: none;
+}
+
+.profile-data .label-block textarea:hover, .profile-data .label-block input:hover, .profile-data .label-block select:hover {
+    background: rgb(234, 236, 239);
+}
+
+.profile-data .label-block textarea:focus, .profile-data .label-block input:focus, .profile-data .label-block select:focus {
+    border-color: #5d78ff;
+    background: #fff;
+}
+
+.profile-data .label-block .label-arrow {
+    position: absolute;
+    top: 16%;
+    right: 12px;
+    color: #888;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

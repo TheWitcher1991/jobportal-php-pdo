@@ -1,0 +1,125 @@
+.al-stats {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.al-stats > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.lock-site {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 4px 16px 0 rgb(93 120 255 / 30%);
+    /*background: linear-gradient(to left, rgba(255,255,255,0) 25%, rgba(255,255,255,0.3));*/
+    background-color: #1170e4;
+    font-weight: 300;
+    padding: 16px;
+    border-radius: 4px;
+    margin: 30px 0 0 0;
+}
+
+.lock-site i {
+    margin: 0 6px 0 0;
+}
+
+.lock-site a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.al-stats > ul > li {
+    color: #fff;
+    width: 100%;
+    height: 90px;
+    margin: 0 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 10px;
+    transition: all 0.1s linear;
+    outline: none;
+    /*background:#1170e4 linear-gradient(to left, rgba(255,255,255,0) 25%, rgba(255,255,255,0.3));*/
+    background-color: #fff;
+}
+
+.al-stats > ul > li:first-of-type {
+    background: linear-gradient(135deg, #ABDCFF 10%, #0396FF 100%);
+}
+
+
+
+.al-stats > ul > li:nth-child(2) {
+    background: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);
+}
+
+
+.al-stats > ul > li:nth-child(3) {
+    background: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+}
+
+
+.al-stats > ul > li:nth-child(4) {
+    background:  linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+}
+
+.al-stats > ul > li:nth-child(5) {
+    background:  linear-gradient( 135deg, #adf8d0 10%, #3dc77d 100%);
+}
+
+.al-stats > ul > li:hover {
+    transform: translateY(-3px);
+}
+
+.al-stats > ul > li:last-of-type {
+    margin: 0;
+}
+
+.as-i {
+    font-size: 29px;
+    color: #fff;
+}
+
+.al-stats > ul > li .as-t span {
+    color: #fff;
+    display: block;
+    text-align: left;
+}
+
+.as-tt {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.as-tk {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cblock-1 {
+    display: flex;
+}
+
+.block-views {
+    margin: 0 30px 0 0;
+    width: 100%;
+}
+
+.block-rating {
+    width: 50%;
+}
+
+
+
+.chart {
+    padding: 16px 26px 0 0;
+}

@@ -1,0 +1,23 @@
+User-agent: YandexDirect
+Allow: *?*
+
+User-agent: LCC
+Disallow: /
+
+User-agent: ltx71 - (http://ltx71.com/)
+Disallow: /
+
+User-agent: *
+Disallow: *?*
+Disallow: /auth/*
+Disallow: /admin/*
+Disallow: /guest/*
+Disallow: /create/*
+Disallow: /scripts/*
+Disallow: /feedback
+Disallow: /login
+Disallow: /static
+Disallow: ../static
+
+Host: http://stgaujob.ru
+Sitemap: http://stgaujob.ru/sitemap.xml
