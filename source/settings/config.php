@@ -9,20 +9,20 @@ ini_set('allow_url_fopen', 1);
 
 const SERVER_TOKEN = true;
 
-const CRYPT_KEY = '035189478997e2b7008a8564adea1e8f3f06d5778dfce9867d67e2ce442aa9fb9d217a1d2d87b939';
+const CRYPT_KEY = '';
 
-const METHOD_CRYPT = 'AES-128-CBC';
+const METHOD_CRYPT = '';
 
-const HASH_METHOD = 'sha256';
+const HASH_METHOD = '';
 
 $config = [
     'title' => 'СтГАУ Агрокадры',
     'url' => 'http://stgaujob.ru/',
     'db' => [
-        'host' => 'localhost',
-        'user' => 'stgau_main',
-        'password' => 'jQrSgmYj8uD2KML',
-        'dbname' => 'stgau_main'
+        'host' => '',
+        'user' => '',
+        'password' => '',
+        'dbname' => ''
     ]
 ];
 
