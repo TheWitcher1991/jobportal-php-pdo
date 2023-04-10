@@ -21,6 +21,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
 
     Head('Логи входов');
 
+    $profileNavigator = [
+        'Профиль' => '/profile',
+        'Безопасность' => '#',
+        "Логи входов" => '/logs'
+    ];
+
     ?>
 
     <body class="profile-body">

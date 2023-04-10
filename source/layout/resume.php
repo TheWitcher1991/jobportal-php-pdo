@@ -317,9 +317,17 @@ if (isset($_SESSION['id'], $_SESSION['password']) and $_SESSION['type'] == 'comp
                 <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
                     <a itemprop="item" href="/resume-list">Резюме студентов</a>
                 </span>
+
+
+
                 <span><i class="fa-solid fa-chevron-right"></i></span>
                 <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
                     <a itemprop="item" href="/students/?f=<?php echo $rr['faculty'] ?>"><?php echo $rr['faculty'] ?></a>
+                </span>
+
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+                <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item"><?php echo $rr['direction'] ?></a>
                 </span>
 
                 <span><i class="fa-solid fa-chevron-right"></i></span>

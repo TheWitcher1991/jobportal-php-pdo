@@ -176,6 +176,18 @@ display: inline-block;"
 
                         <div class="tabs-item">
                             <div class="tabs-form tb-si-b tabs-act">
+
+                                <div class="el-steps">
+                                    <div class="el-step step-active el-step-process">
+                                        <div class="el-step_icon">1</div>
+                                        <div class="el-step_text">Заполнение <br /> данных</div>
+                                    </div>
+                                    <div class="el-step">
+                                        <div class="el-step_icon">2</div>
+                                        <div class="el-step_text">Подтверждение <br /> email</div>
+                                    </div>
+                                </div>
+
                                 <form role="form" class="form-create-user" method="post">
                                     <div class="flex-h">
                                         <div class="flex f-n">
@@ -400,7 +412,7 @@ display: inline-block;"
                                             </div>
 
                                             <div class="label-block label-b-info">
-                                                Нажимая кнопку «Продолжить», Вы принимаете условия «<a target="_blank" href="http://stgau.ru/privacy/">Политики конфиденциальности</a>».
+                                                Нажимая кнопку «Продолжить», Вы принимаете условия «<a target="_blank" href="http://stgau.ru/privacy/">Политики конфиденциальности</a>»
                                             </div>
                                         </div>
                                     </div>

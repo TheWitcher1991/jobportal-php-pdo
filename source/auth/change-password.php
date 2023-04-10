@@ -22,7 +22,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
 
     Head('Сменить пароль');
 
-
+    $profileNavigator = [
+        'Профиль' => '/profile',
+        'Безопасность' => '#',
+        "Сменить пароль" => '/change-password'
+    ];
 
     /*if (isset($_POST["save-pass-user"])) {
         $err = [];

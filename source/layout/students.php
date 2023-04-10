@@ -44,7 +44,7 @@ if (in_array($faculty, $fak)) {
     <?php require('template/base/navblock.php'); ?>
     <div class="header-search-container">
         <div class="container">
-            <form action="" method="post">      <span class="hs-h">Свежие резюме - <?php echo $faculty ?></span>
+            <form action="" method="post">      <span class="hs-h">Свежие резюме — <?php echo $faculty ?></span>
                 <div class="header-input-container">
                     <div class="hi-field" style="width: 100%;border: 0">
                         <i class="mdi mdi-magnify"></i>

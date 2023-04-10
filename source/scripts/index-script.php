@@ -6,8 +6,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' && !isset($_SERVER['HTTP_X_REQUESTED_W
 }
 
 try {
+  
+	
 
-    if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
+   /* if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
 
         $client = clientInfo(getIp());
 
@@ -24,7 +26,7 @@ try {
 </div>");
         }
 
-    }
+    }*/
 
     $stmt = $PDO->prepare("DELETE FROM `online` WHERE `times` < SUBTIME(NOW(), '0 0:5:0')");
     $stmt->execute();
@@ -52,35 +54,27 @@ try {
 
     $stmts = $PDO->prepare("SELECT * FROM `vacancy` WHERE `status` = 0");
     $stmts->execute();
+
     if ($stmts->rowCount() > 0) {
-        while ($r = $stmts->fetch()) {
-            $now = date("Y-m-d");
-            if (($r['task'] == $now) || ($r['task'] < $now)) {
+        $now = date("Y-m-d");
+        $chuck = array_chunk($stmts->fetchAll(), 100);
 
-                $app->execute('UPDATE `vacancy` SET `status` = 1, `trash` = :task WHERE `id` = :id', [
-                    ':task' => $Date,
-                    ':id' => $r['id']
-                ]);
+        foreach ($chuck as $list) {
+            foreach ($list as $r) {
+                if (($r['task'] == $now) || ($r['task'] < $now)) {
+                    $stmt = $PDO->prepare("UPDATE `vacancy` SET `status` = 1, `trash` = ? WHERE `id` = ?");
+                    $stmt->execute([$Date, $r['id']]);
 
-                $app->execute("INSERT INTO `notice` (`type`, `title`, `date`, `hour`, `time`, `company_id`, `job_id`, `who`)
-                        VALUES(:typ, :title, :dat, :h, NOW(), :ci, :ji, :who)", [
-                    ':typ' => 'company_vacancy',
-                    ':title' => 'Вакансия закрылась!',
-                    ':dat' => $Date,
-                    ':h' => date("H:i"),
-                    ':ci' => $r['company_id'],
-                    ':ji' => $r['id'],
-                    ':who' => 1
-                ]);
+                    $stmt = $PDO->prepare("INSERT INTO `notice` (`type`, `title`, `date`, `hour`, `time`, `company_id`, `job_id`, `who`)
+                        VALUES(?, ?, ?, ?, NOW(), ?, ?, ?)");
+                    $stmt->execute(['company_vacancy', 'Вакансия закрылась', $Date, date("H:i"), $r['company_id'], $r['id'], 1]);
 
-                $app->execute('UPDATE `category` SET `job` = `job` - 1 WHERE `id` = :id', [
-                    ':id' => $r['category_id']
-                ]);
+                    $stmt = $PDO->prepare("UPDATE `category` SET `job` = `job` - 1 WHERE `id` = ?");
+                    $stmt->execute([$r['category_id']]);
 
-                $app->execute("UPDATE `company` SET `job` = `job` - 1 WHERE `id` = :id", [':id' => $r['company_id']]);
-
-                sleep(1);
-
+                    $stmt = $PDO->prepare("UPDATE `company` SET `job` = `job` - 1 WHERE `id` = :id");
+                    $stmt->execute([$r['company_id']]);
+                }
             }
         }
     }

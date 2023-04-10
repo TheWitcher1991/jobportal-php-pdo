@@ -1,0 +1,35 @@
+{
+  "name": "stgaujob",
+  "main": "",
+  "bin": "",
+  "version": "1.0.0",
+  "license": "GNU GPL",
+  "type": "module",
+  "author": "github: TheWitcher1991 <alikzoy@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-size-snapshot": "^0.12.0",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "@rollup/plugin-terser": "^0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWitcher1991/STGAU-Agro"
+  },
+  "eslintIgnore": [
+    "build/**",
+    "node_modules/**",
+    "coverage/**",
+    "packages/**"
+  ],
+  "devEngines": {
+    "node": ">= 18.x.x",
+    "npm": ">= 9.x.x"
+  }
+}

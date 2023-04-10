@@ -19,7 +19,37 @@ if (isset($_SESSION['company']) && isset($_SESSION['password']) && $_SESSION['ty
         $app->notFound();
     }
 
-    Head($r['name'] . ' - Откликнувшиеся');
+    Head($r['name'] . ' - Отклики');
+
+    $navtitle = '';
+    $navlink = '';
+
+    if (empty($_GET['t'])) {
+        $navtitle = 'Неразобранные';
+        $navlink = '/responded';
+    } else if ($_GET['t'] == 2) {
+        $navtitle = 'Разговор по телефону';
+        $navlink = '/responded/?t=2';
+    } else if ($_GET['t'] == 3) {
+        $navtitle = 'Собеседование';
+        $navlink = '/responded/?t=3';
+    } else if ($_GET['t'] == 4) {
+        $navtitle = 'Принят на работу';
+        $navlink = '/responded/?t=4';
+    } else if ($_GET['t'] == 5) {
+        $navtitle = 'Отказ';
+        $navlink = '/responded/?t=5';
+    } else if ($_GET['t'] == 6) {
+        $navtitle = 'Приглашённые';
+        $navlink = '/responded/?t=6';
+    }
+
+    $profileNavigator = [
+        'Профиль' => '/profile',
+        'Отклики' => '/responded',
+        "{$navtitle}" => "{$navlink}"
+    ];
+
 
 
     ?>

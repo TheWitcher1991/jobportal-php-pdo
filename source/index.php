@@ -38,6 +38,7 @@ use Core\App;
 use Core\Login;
 use Core\Crypto;
 use Core\Session;
+use core\SessionHandler;
 use Core\Router;
 use Core\View;
 use Core\Pagination;
@@ -62,6 +63,8 @@ require_once 'classes/View.php';
 require_once 'classes/Pagination.php';
 require_once 'classes/pQuery.php';
 
+require_once 'settings/api.php';
+
 Session::instance()->start();
 
 ob_start();
@@ -77,6 +80,10 @@ $paginator = new Pagination();
 Router::instance()->autoLoadClass();
 
 $detect = new Mobile_Detect;
+
+define("SESSION_TOKEN", Crypto::instance()->encrypt(
+    $_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT']
+));
 
 # ! Подключение PDO - УБРАТЬ
 
@@ -94,8 +101,6 @@ try {
     die($e->getMessage());
 }
 
-
-
 # Проверка BLACK LIST IP
 $client = clientInfo(getIp());
 
@@ -110,6 +115,17 @@ if ($c) {
 
 </div>");
 }
+
+
+
+if (!SERVER_TOKEN) {
+    exit("<div>
+<h1>403 Forbidden</h1>
+<span>Доступ запрещён администратором</span>
+
+</div>");
+}
+
 
 
 $TIMER_JOB = 16;
@@ -495,4 +511,7 @@ if ($user !== 'guest' || isset($_SESSION['id'])) {
         }
     }
 }
+
+
+
 

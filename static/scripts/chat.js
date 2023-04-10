@@ -2,7 +2,6 @@
 
 (function ($) {
 
-
     let $_GET = window
         .location
         .search
@@ -17,79 +16,61 @@
             {}
         );
 
+
+
+
     let $form = $('.form-chat'),
         box = $('.chat-ul'),
         text = $('.input-msg')
 
-    function chatError(response) {
-        console.log(response);
+
+    function chatSuccess(data, act) {
+        if (data.status === 'В сети') $('.sb-img > div > p').html(`<span style="color: #1967d2">${data.status}</span>`)
+        else $('.sb-img > div > p').html(data.status)
+        box.html(data.list);
     }
 
-    function chatSuccess(responce, act) {
-        if (act === 3) {
-            if (responce.status === 'В сети') $('.sb-img > div > p').html(`<span style="color: #1967d2">${responce.status}</span>`)
-            else $('.sb-img > div > p').html(responce.status)
+    const sendRequest = function (act) {
+        const evtSource = new EventSource(`/scripts/chat/?act=${act}&id=${$_GET['id']}&${$form.serialize()}`);
+
+        if (act === 1) {
+
+
+            evtSource.addEventListener('message', event => {
+
+                let data = JSON.parse(event.data);
+
+                if (data.code === 'success') {
+                    chatSuccess(data, act);
+                } else  {
+                    console.log(data.code)
+                }
+
+                evtSource.close()
+
+            }, {once: true})
+
+
         } else {
-            let list = responce.data.list;
-            box.html(list);
+            evtSource.onmessage = function(event) {
+
+                let data = JSON.parse(event.data);
+
+                if (data.code === 'success') {
+                    chatSuccess(data, act);
+                } else  {
+                    console.log(data.code)
+                }
+            };
         }
 
     }
 
-
-
-    function update() {
-        send(2)
-        send(3)
-    }
-
-    async function send(act) {
-
-        let process = false;
-
-        if (!process) {
-
-            process = true;
-
-            await $.ajax({
-                url: '/scripts/chat',
-                data: `act=${act}&id=${$_GET['id']}&${$form.serialize()}`,
-                type: 'POST',
-                cache: false,
-                dataType: 'json',
-                error: function () {
-                    chatError()
-
-                    process = false;
-                },
-                success: function (responce) {
-                    if (responce.code === 'success') {
-                        chatSuccess(responce, act);
-                        if (act === 1) {
-                            $form.reset()
-                        }
-                    } else {
-                        chatError(responce)
-                    }
-
-                    process = false;
-                }})
-
-        }
-
-
-    }
-
-
-
-    if ($_GET['id'] || $_GET['id'] >= 0) {
-        let interval = setInterval(() => send(3), 6000)
-        let interval2 = setInterval(() => send(2), 3000)
-    }
+    sendRequest(2);
 
     $(document).on('click', '.send-chat-y', function (e) {
         e.preventDefault()
-        send(1)
+        sendRequest(1);
         document.querySelector('.input-msg').value = ''
         return false;
     })

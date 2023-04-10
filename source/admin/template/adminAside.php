@@ -125,6 +125,20 @@
                     <span><i class="mdi mdi-chat-question-outline"></i> Чат с компаниями</span>
                 </a>
             </li>
+
+
+            <li>
+                <a <?php if (true == false) { echo 'class="active-menuItem2"'; }  ?>>
+                    <span><i class="mdi mdi-head-question-outline"></i> Ещё</span>
+                    <i class="mdi mdi-menu-down"></i>
+                </a>
+                <ul <?php if (true == false) { echo 'style="display:block"'; }  ?> class="aside-pop">
+                    <li><a href="/admin/questioning">Конструктор анкет</a></li>
+                    <li><a href="/admin/notice">Констуктор уведомлений</a></li>
+                    <li><a href="/admin/idea">Есть идея</a></li>
+                </ul>
+            </li>
+
             <!-- <li>
                  <a>
                      <span><i class="icon-book-open"></i> Резюме</span>

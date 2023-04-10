@@ -258,6 +258,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
     }
 
     Head('Профиль');
+
+    $profileNavigator = [
+        'Профиль' => '/profile',
+    ];
 ?>
 <body class="profile-body">
 
@@ -1973,7 +1977,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
 
 
 
-<script language="JavaScript" src="/static/scripts/profile.js?v=<?= date('YmdHis') ?>"></script>
+<script language="JavaScript" src="/static/scripts/bin/profile.module.js?v=<?= date('YmdHis') ?>"></script>
 
 <script>
 

@@ -22,6 +22,12 @@ if (isset($_SESSION['company']) && isset($_SESSION['password']) && $_SESSION['ty
     Head('Мои вакансии');
 
 
+    $profileNavigator = [
+        'Профиль' => '/profile',
+        'Мои вакансии' => '/manage-job'
+    ];
+
+
 ?>
 <body class="profile-body">
 
@@ -163,7 +169,7 @@ if (isset($_SESSION['company']) && isset($_SESSION['password']) && $_SESSION['ty
 
                             <form role="form" class="form-job form-filter" method="GET">
 
-                                <div class="filter-main filter-job" style="border: 1px solid #cdd0d5;">
+                                <div class="filter-main filter-job">
 
                                     <div class="filter-load">
 

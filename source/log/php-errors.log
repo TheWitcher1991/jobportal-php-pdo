@@ -1,0 +1,1248 @@
+[29-Mar-2023 15:27:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:118
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 118
+[29-Mar-2023 15:27:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:118
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 118
+[29-Mar-2023 15:27:41 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:118
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 118
+[29-Mar-2023 15:27:42 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:118
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/404.php(100): require()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 118
+[29-Mar-2023 15:28:11 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:119
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 119
+[29-Mar-2023 15:31:17 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:119
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 119
+[29-Mar-2023 15:31:19 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:119
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 119
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__sleep() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 16
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__wakeup() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 18
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/s/stgau/public_html/source/classes/Session.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 16
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  The use statement with non-compound name 'core' has no effect in /home/s/stgau/public_html/source/template/base/footer.php on line 118
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:119
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 119
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__sleep() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 16
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__wakeup() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 18
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/s/stgau/public_html/source/classes/Session.php on line 12
+[29-Mar-2023 15:31:30 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/s/stgau/public_html/source/classes/Singleton.php:16) in /home/s/stgau/public_html/source/classes/App.php on line 28
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__sleep() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 16
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__wakeup() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 18
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/s/stgau/public_html/source/classes/Session.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 12
+[29-Mar-2023 15:31:45 Europe/Moscow] PHP Warning:  Undefined array key "loc" in /home/s/stgau/public_html/source/template/base/navblock.php on line 16
+[29-Mar-2023 15:31:46 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:119
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 119
+[29-Mar-2023 15:31:46 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__sleep() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 16
+[29-Mar-2023 15:31:46 Europe/Moscow] PHP Warning:  The magic method core\Singleton::__wakeup() must have public visibility in /home/s/stgau/public_html/source/classes/Singleton.php on line 18
+[29-Mar-2023 15:31:46 Europe/Moscow] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/s/stgau/public_html/source/classes/Session.php on line 12
+[29-Mar-2023 15:31:46 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/s/stgau/public_html/source/classes/Singleton.php:16) in /home/s/stgau/public_html/source/classes/App.php on line 28
+[29-Mar-2023 15:32:02 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Crypto" not found in /home/s/stgau/public_html/source/template/base/footer.php:119
+Stack trace:
+#0 /home/s/stgau/public_html/source/layout/home.php(776): include()
+#1 /home/s/stgau/public_html/source/index.php(273): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/template/base/footer.php on line 119
+[29-Mar-2023 16:11:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Core\Session" not found in /home/s/stgau/public_html/source/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/s/stgau/public_html/source/index.php on line 67
+[29-Mar-2023 16:11:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class "Core\Session" not found in /home/s/stgau/public_html/source/index.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/s/stgau/public_html/source/index.php on line 67
+[29-Mar-2023 16:29:51 Europe/Moscow] PHP Parse error:  syntax error, unexpected variable "$query" in /home/s/stgau/public_html/source/classes/Session.php on line 85
+[29-Mar-2023 16:29:59 Europe/Moscow] PHP Parse error:  syntax error, unexpected variable "$query" in /home/s/stgau/public_html/source/classes/Session.php on line 85
+[29-Mar-2023 16:30:00 Europe/Moscow] PHP Parse error:  syntax error, unexpected variable "$query" in /home/s/stgau/public_html/source/classes/Session.php on line 85
+[29-Mar-2023 16:30:07 Europe/Moscow] PHP Fatal error:  Constant expression contains invalid operations in /home/s/stgau/public_html/source/classes/Session.php on line 14
+[29-Mar-2023 16:30:08 Europe/Moscow] PHP Fatal error:  Constant expression contains invalid operations in /home/s/stgau/public_html/source/classes/Session.php on line 14
+[29-Mar-2023 16:30:08 Europe/Moscow] PHP Fatal error:  Constant expression contains invalid operations in /home/s/stgau/public_html/source/classes/Session.php on line 14
+[29-Mar-2023 16:31:06 Europe/Moscow] PHP Fatal error:  Constant expression contains invalid operations in /home/s/stgau/public_html/source/classes/Session.php on line 14
+[29-Mar-2023 18:54:01 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(349): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 18:59:05 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(349): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 19:01:08 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(349): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 20:35:46 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `surname` != 'Свазян'' at line 1 in /home/s/stgau/public_html/source/classes/App.php:58
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(58): PDO->query('SELECT * FROM `...')
+#1 /home/s/stgau/public_html/source/layout/home.php(562): Core\App->count('SELECT * FROM `...')
+#2 /home/s/stgau/public_html/source/index.php(275): include('/home/s/stgau/p...')
+#3 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 58
+[29-Mar-2023 21:39:04 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 21:39:08 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 21:39:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 21:39:15 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 21:39:16 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 22:59:12 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 22:59:12 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:29:38 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/s/stgau/public_html/source/scripts/filter-company.php:191
+Stack trace:
+#0 /home/s/stgau/public_html/source/scripts/filter-company.php(253): getData(Array, Object(PDO), Object(Core\App))
+#1 /home/s/stgau/public_html/source/index.php(280): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/filter-company.php on line 191
+[29-Mar-2023 23:29:54 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/s/stgau/public_html/source/scripts/filter-company.php:191
+Stack trace:
+#0 /home/s/stgau/public_html/source/scripts/filter-company.php(253): getData(Array, Object(PDO), Object(Core\App))
+#1 /home/s/stgau/public_html/source/index.php(280): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/filter-company.php on line 191
+[29-Mar-2023 23:30:01 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/s/stgau/public_html/source/scripts/filter-company.php:191
+Stack trace:
+#0 /home/s/stgau/public_html/source/scripts/filter-company.php(253): getData(Array, Object(PDO), Object(Core\App))
+#1 /home/s/stgau/public_html/source/index.php(280): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/filter-company.php on line 191
+[29-Mar-2023 23:30:59 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/s/stgau/public_html/source/scripts/filter-company.php:190
+Stack trace:
+#0 /home/s/stgau/public_html/source/scripts/filter-company.php(252): getData(Array, Object(PDO), Object(Core\App))
+#1 /home/s/stgau/public_html/source/index.php(280): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/filter-company.php on line 190
+[29-Mar-2023 23:48:00 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:48:05 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:48:07 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:48:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:48:10 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:48:13 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:48:15 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:51:12 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[29-Mar-2023 23:51:19 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 18:09:24 Europe/Moscow] PHP Fatal error:  'break' not in the 'loop' or 'switch' context in /home/s/stgau/public_html/source/scripts/mem.php on line 11
+[31-Mar-2023 18:17:42 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 18:17:45 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 18:17:49 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 18:17:49 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 18:17:50 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 18:55:51 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function getOptions() in /home/s/stgau/public_html/source/scripts/mem.php:130
+Stack trace:
+#0 /home/s/stgau/public_html/source/index.php(280): include()
+#1 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/mem.php on line 130
+[31-Mar-2023 18:58:04 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function getOptions() in /home/s/stgau/public_html/source/scripts/mem.php:131
+Stack trace:
+#0 /home/s/stgau/public_html/source/index.php(280): include()
+#1 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/mem.php on line 131
+[31-Mar-2023 18:59:20 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function getOptions() in /home/s/stgau/public_html/source/scripts/mem.php:122
+Stack trace:
+#0 /home/s/stgau/public_html/source/index.php(280): include()
+#1 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/mem.php on line 122
+[31-Mar-2023 18:59:27 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function getOptions() in /home/s/stgau/public_html/source/scripts/mem.php:105
+Stack trace:
+#0 /home/s/stgau/public_html/source/index.php(280): include()
+#1 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/mem.php on line 105
+[31-Mar-2023 18:59:42 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function getOptions() in /home/s/stgau/public_html/source/scripts/mem.php:121
+Stack trace:
+#0 /home/s/stgau/public_html/source/index.php(280): include()
+#1 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/mem.php on line 121
+[31-Mar-2023 19:06:26 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:06:29 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(350): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:10:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Undefined constant "SERVER_TOKEN" in /home/s/stgau/public_html/source/index.php:121
+Stack trace:
+#0 {main}
+  thrown in /home/s/stgau/public_html/source/index.php on line 121
+[31-Mar-2023 19:12:32 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:12:33 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:12:36 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:12:39 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:14:59 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function getOptions() in /home/s/stgau/public_html/source/scripts/mem.php:134
+Stack trace:
+#0 /home/s/stgau/public_html/source/scripts/mem.php(317): send(Object(PDO), Object(Core\App), '31.03.2023', '31 \xD0\xBC\xD0\xB0\xD1\x80\xD1\x82\xD0\xB0')
+#1 /home/s/stgau/public_html/source/index.php(290): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/mem.php on line 134
+[31-Mar-2023 19:15:00 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function getOptions() in /home/s/stgau/public_html/source/scripts/mem.php:134
+Stack trace:
+#0 /home/s/stgau/public_html/source/scripts/mem.php(317): send(Object(PDO), Object(Core\App), '31.03.2023', '31 \xD0\xBC\xD0\xB0\xD1\x80\xD1\x82\xD0\xB0')
+#1 /home/s/stgau/public_html/source/index.php(290): include('/home/s/stgau/p...')
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/scripts/mem.php on line 134
+[31-Mar-2023 19:15:39 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:15:41 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:15:42 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:15:44 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:16:44 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:27:59 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:27:59 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:28:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:28:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:28:57 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:28:57 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:29:00 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:29:00 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:29:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:29:04 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:30:02 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:30:02 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:30:06 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:30:06 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:31:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:31:05 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:31:07 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:31:08 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:36:14 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:36:15 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:36:18 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:36:18 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:37:18 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:37:20 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:37:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:37:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:40:53 Europe/Moscow] PHP Parse error:  Unclosed '{' on line 14 in /home/s/stgau/public_html/source/scripts/chat.php on line 323
+[31-Mar-2023 19:42:27 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:42:28 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:43:25 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:43:28 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:43:28 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:43:28 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:43:28 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:44:30 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:44:30 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:45:32 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:46:34 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:47:36 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:19 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:19 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:20 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:22 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:23 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:25 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:25 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:26 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:26 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:26 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:27 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:27 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:28 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:29 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:30 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:30 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:31 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:31 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:32 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:32 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:33 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:33 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:48:34 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:49:40 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/s/stgau/public_html/source/classes/App.php:63
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(63): PDO->prepare('SELECT * FROM `...')
+#1 /home/s/stgau/public_html/source/index.php(108): Core\App->rowCount('SELECT * FROM `...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 63
+[31-Mar-2023 19:51:23 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/s/stgau/public_html/source/classes/App.php:63
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(63): PDO->prepare('SELECT * FROM `...')
+#1 /home/s/stgau/public_html/source/index.php(108): Core\App->rowCount('SELECT * FROM `...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 63
+[31-Mar-2023 19:51:27 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/s/stgau/public_html/source/classes/App.php:63
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(63): PDO->prepare('SELECT * FROM `...')
+#1 /home/s/stgau/public_html/source/index.php(108): Core\App->rowCount('SELECT * FROM `...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 63
+[31-Mar-2023 19:51:50 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:51:52 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:51:54 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:51:57 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:51:59 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:52:01 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:52:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:52:05 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:52:08 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:00 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:02 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:04 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:06 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:08 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:11 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:13 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:53:15 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:54:16 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:56:15 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:56:17 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:57:11 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:57:13 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:57:17 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:57:20 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:58:16 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:58:18 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:58:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:59:20 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[31-Mar-2023 19:59:22 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[04-Apr-2023 19:37:01 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[04-Apr-2023 19:37:08 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[04-Apr-2023 19:37:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[04-Apr-2023 19:37:25 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:02:22 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:02:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:02:58 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:02:59 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:00 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:01 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:01 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:02 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:04 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:06 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:11 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:13 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:15 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:18 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:20 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:22 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:03:25 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:10 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:12 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:12 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:14 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:17 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:19 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:21 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:04:26 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[06-Apr-2023 22:24:20 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84
+[09-Apr-2023 17:26:20 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ip' cannot be null in /home/s/stgau/public_html/source/classes/App.php:84
+Stack trace:
+#0 /home/s/stgau/public_html/source/classes/App.php(84): PDOStatement->execute()
+#1 /home/s/stgau/public_html/source/index.php(360): Core\App->execute('INSERT INTO `ip...', Array)
+#2 {main}
+  thrown in /home/s/stgau/public_html/source/classes/App.php on line 84

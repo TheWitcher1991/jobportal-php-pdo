@@ -386,7 +386,7 @@ if (isset($_SESSION['surname']) && isset($_SESSION['password']) && $_SESSION['ty
 
    <div class="upload-block">
                                 <div class="uploadButton-block">
-                                    <input onchange="upload()" class="uploadButton-input upload-cxt" type="file" name="file[]" accept=".jpg,.jpeg,.png,.doc,.txt,.rar,.zip,.tar,.docx,.ppt,.odt"  id="upload3" multiple>
+                                    <input onchange="upload()" class="uploadButton-input upload-cxt" type="file" name="file[]" accept=".jpg,.jpeg,.png,.doc,.txt,.rar,.zip,.tar,.docx,.ppt,.odt,.pptx"  id="upload3" multiple>
                                     <label class="uploadButton-button ripple-effect" for="upload3" style="">
                                         <i class="icon-cloud-upload"></i>
                                         Нажмите для загрузки файлов

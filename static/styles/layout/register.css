@@ -93,7 +93,7 @@
     background: #fbfbfb;
     font-size: 14px;
     color: #444;
-    border: 1px solid #cdd0d5;
+    border: 1px solid transparent;
     text-align: center;
     transition: linear 0.2s all;
 }
@@ -108,8 +108,8 @@
 
 .tabs-li > li > a.tabs-act {
     color: #fff;
-    background: #5d78ff;
-    border-color: #5d78ff;
+    background: #1967d2;
+    border-color: #1967d2;
 }
 
 .tabs-li > li > a.tabs-act:hover {

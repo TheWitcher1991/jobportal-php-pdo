@@ -2,25 +2,27 @@
 
 #error_reporting(E_ALL);
 #ini_set('display_errors', 'On');
-#ini_set('log_errors', 'On');
-#ini_set('error_log', $_SERVER['DOCUMENT_ROOT'] . '/source/log/php-errors.log');
+ini_set('log_errors', 'On');
+ini_set('error_log', $_SERVER['DOCUMENT_ROOT'] . '/source/log/php-errors.log');
 
 ini_set('allow_url_fopen', 1);
 
-const CRYPT_KEY = '';
+const SERVER_TOKEN = true;
 
-const METHOD_CRYPT = '';
+const CRYPT_KEY = '035189478997e2b7008a8564adea1e8f3f06d5778dfce9867d67e2ce442aa9fb9d217a1d2d87b939';
 
-const HASH_METHOD = '';
+const METHOD_CRYPT = 'AES-128-CBC';
+
+const HASH_METHOD = 'sha256';
 
 $config = [
     'title' => 'СтГАУ Агрокадры',
     'url' => 'http://stgaujob.ru/',
     'db' => [
-        'host' => '',
-        'user' => '',
-        'password' => '',
-        'dbname' => ''
+        'host' => 'localhost',
+        'user' => 'stgau_main',
+        'password' => 'jQrSgmYj8uD2KML',
+        'dbname' => 'stgau_main'
     ]
 ];
 
@@ -132,7 +134,7 @@ $routes = [
     ],
     'scripts' => [
         'feedback-js', 'respond-js', 'uploads-js', 'uploads-only-js', 'profile-js', 'save-js', 'notice-js', 'job-js', 'create-user-js',
-        'filter-job', 'captcha', 'filter-company', 'filter-resume', 'filter-lk-company', 'chat', 'filter-chat', 'index-script'
+        'filter-job', 'captcha', 'filter-company', 'filter-resume', 'filter-lk-company', 'chat', 'filter-chat', 'index-script', 'mem'
     ],
     'guest' => [
         'logout',
@@ -302,7 +304,8 @@ function Head ($title) {
 
     <!-- Icons and fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/scripts/verify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">

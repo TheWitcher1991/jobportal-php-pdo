@@ -23,6 +23,12 @@ if (($status >= 200 && $status < 300) || $status == 304) {
     <p><i>Из-за этого Сайт может работать медленно и с ошибками</i></p>
     <p><i>Пожалуйста, обновите ваш браузер до последней версии.</i></p>
 
+    <br />
+
+    <h1>Your browser is out of date.</h1>
+    <p><i>This can cause the Site to be slow and buggy.</i></p>
+    <p><i>Please update your browser to the latest version.</i></p>
+
     </body>
     </html>
     <?php

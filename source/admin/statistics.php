@@ -27,6 +27,29 @@ if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
 
 
 
+    $res = [];
+    $sql = $app->query("SELECT * FROM `visits_resume` WHERE `time` >= SUBTIME(NOW(), '0 168:0:0') GROUP BY `day` ORDER BY `id` ASC");
+    while ($a = $sql->fetch()) {
+
+        $re = $app->rowCount("SELECT * FROM `respond` WHERE `time` = :tim GROUP BY `date_ru` ORDER BY `id`", [':tim' => $a['time']]);
+        $res[] = [
+            'y' => $a['day'],
+            'counter'  => $a['counter'],
+            'respond' => $re
+        ];
+    }
+
+    $ctx = [];
+    $sql = $app->query("SELECT * FROM `visits_resume` WHERE `time` >= SUBTIME(NOW(), '0 4320:0:0') GROUP BY `day` ORDER BY `id` ASC");
+    while ($a = $sql->fetch()) {
+        $re = $app->rowCount("SELECT * FROM `respond` WHERE `time` = :tim GROUP BY `date_ru` ORDER BY `id`", [':tim' => $a['time']]);
+        $ctx[] = [
+            'y' => $a['day'],
+            'counter'  => $a['counter'],
+            'respond' => $re
+        ];
+    }
+
     ?>
 
     <body class="profile-body">
@@ -53,7 +76,12 @@ if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
                     <span><a target="_blank" href="/students/?f=<?php echo $f; ?>"><?php echo $f; ?></a></span>
     <?php } ?>
                 </div>
-                <?php if (empty($faculty)) { ?>
+                <?php if (empty($faculty)) {
+
+
+
+
+                    ?>
 
                         <div class="create-box-chart-all">
 
@@ -63,9 +91,98 @@ if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
 
                         </div>
 
-                <div class="chart-wrapper-block-2">
+                <div class="chart-wrapper-block-2" style="display: block">
 
-                    <div class="row sparkboxes mt-4">
+
+
+                    <div class="al-stats">
+                        <ul>
+
+                            <li>
+                                <div class="as-t">
+                                    <span class="as-tt"><? echo $app->count("SELECT * FROM `users`");
+
+                                                   $new_view = $app->count("SELECT * FROM `users` WHERE `time` > SUBTIME(NOW(), '0 24:0:0')");
+
+                                         if ($new_view > 0) {
+                                             echo ' <span style="font-size: 18px"> +' . $new_view . '</span>';
+                                         }
+
+
+                                        ?></span>
+                                    <span class="as-tk">Студентов</span>
+                                </div>
+                                <div class="as-i"><i class="mdi mdi-school-outline"></i></div>
+
+                            </li>
+
+
+                            <li>
+                                <div class="as-t">
+                                    <span class="as-tt"><? echo $app->count("SELECT * FROM `respond`");
+
+                                           $new_view = $app->count("SELECT * FROM `respond` WHERE `time` > SUBTIME(NOW(), '0 24:0:0')");
+
+                                         if ($new_view > 0) {
+                                             echo ' <span style="font-size: 18px"> +' . $new_view . '</span>';
+                                         }
+
+                                        ?></span>
+                                    <span class="as-tk">Откликов</span>
+                                </div>
+                                <div class="as-i"><i class="mdi mdi-database-check-outline"></i></div>
+
+                            </li>
+
+                            <li>
+                                <div class="as-t">
+                                    <span class="as-tt"><? echo $app->count("SELECT * FROM `visits_resume`");
+
+                                         $new_view = $app->count("SELECT * FROM `visits_resume` WHERE `time` > SUBTIME(NOW(), '0 24:0:0')");
+
+                                         if ($new_view > 0) {
+                                             echo ' <span style="font-size: 18px"> +' . $new_view . '</span>';
+                                         }
+
+                                        ?> </span>
+                                    <span class="as-tk">Просмотры резюме</span>
+                                </div>
+                                <div class="as-i"><i class="mdi mdi-database-eye-outline"></i></div>
+
+                            </li>
+
+                            <li>
+                                <div class="as-t">
+                                    <span class="as-tt"><?php echo $app->count("SELECT * FROM `online`") ?></span>
+                                    <span class="as-tk">На сайте сейчас</span>
+                                </div>
+                                <div class="as-i"><i class="mdi mdi-eye-outline"></i></div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="analysis-manage-flex" style="display:block;">
+
+                        <?php if (count($ctx) > 0) { ?>
+
+                            <div style="width: 100%;margin: 0 0 30px 0;" class="block-result">
+                                <span>Просмотры и отклики за полгода <i class="fa-solid fa-minus"></i></span>
+                                <div class="chart">
+                                    <div id="visits_2" style="height: 250px"></div>
+                                </div>
+                            </div>
+                            <div style="width: 100%;" class="block-result">
+                                <span>Просмотры и отклики за неделю<i class="fa-solid fa-minus"></i></span>
+                                <div class="chart">
+                                    <div id="visits" style="height: 250px"></div>
+                                </div>
+                            </div>
+
+                        <?php } ?>
+                    </div>
+
+              <!--      <div class="row sparkboxes mt-4">
                         <div class="col-md-3">
                             <div class="box box1">
                                 <div class="details">
@@ -118,7 +235,7 @@ if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
                                 <div id="views_2"></div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
 
                 </div>
@@ -375,7 +492,24 @@ if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
                         </a>
                     </div>
 
-                <?php } else { ?>
+                <?php } else {
+
+                    if ($faculty == 1) require('admin/module/statistics/economic.php');
+                    else if ($faculty == 2) require('admin/module/statistics/agrobiology.php');
+                    else if ($faculty == 3) require('admin/module/statistics/ecology.php');
+                    else if ($faculty == 4) require('admin/module/statistics/technological.php');
+                    else if ($faculty == 5) require('admin/module/statistics/socio.php');
+                    else if ($faculty == 6) require('admin/module/statistics/electric.php');
+                    else if ($faculty == 7) require('admin/module/statistics/finance.php');
+                    else if ($faculty == 8) require('admin/module/statistics/spo.php');
+                    else if ($faculty == 9) require('admin/module/statistics/veterinary.php');
+                    else if ($faculty == 10) require('admin/module/statistics/biotechnology.php');
+                    else echo 'Факультет не найден';
+
+                    ?>
+
+
+
 
     <div class="chart-wrapper-block">
 
@@ -528,7 +662,49 @@ if (isset($_SESSION['id']) && $_SESSION['type'] == 'admin') {
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js" integrity="sha512-K5BohS7O5E+S/W8Vjx4TIfTZfxe9qFoRXlOXEAWJD7MmOXhvsSl2hJihqc0O8tlIfcjrIkQXiBjixV8jgon9Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <script>
+
+        let ctx =  <?php echo json_encode($ctx); ?>;
+
+        console.log(ctx);
+
+        new Morris.Bar({
+            element: 'visits_2',
+            data: <?php echo json_encode($ctx); ?>,
+            xkey: 'y',
+            ykeys: ['counter', 'respond'],
+            labels: ['Просмотры', 'Отклики'],
+            fillOpacity: 0.6,
+            hideHover: 'auto',
+            behaveLikeLine: true,
+            resize: true,
+            pointFillColors:['#ffffff'],
+            pointStrokeColors: ['black'],
+            lineColors:['#259ef9','#00e396'],
+        });
+
+        new Morris.Bar({
+            element: 'visits',
+            data: <?php echo json_encode($res); ?>,
+            xkey: 'y',
+            ykeys: ['counter', 'respond'],
+            labels: ['Просмотры', 'Отклики'],
+            fillOpacity: 0.6,
+            hideHover: 'auto',
+            behaveLikeLine: true,
+            resize: true,
+            pointFillColors:['#ffffff'],
+            pointStrokeColors: ['black'],
+            lineColors:['#259ef9','#00e396'],
+        });
+
+    </script>
 
 
     <script>

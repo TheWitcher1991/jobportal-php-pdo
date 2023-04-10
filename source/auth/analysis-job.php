@@ -23,6 +23,13 @@ if (isset($_SESSION['company']) && isset($_SESSION['password']) && $_SESSION['ty
     Head($jo['title']);
 
 
+    $profileNavigator = [
+        'Профиль' => '/profile',
+        'Мои вакансии' => '/manage-job',
+        "{$jo['title']}" => '/job/?id='.$jo['id']
+    ];
+
+
     ?>
     <body class="profile-body">
 

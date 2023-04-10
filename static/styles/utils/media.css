@@ -5,6 +5,11 @@
 */
 
 @media all and (max-width: 1670px) {
+
+    .mj-left {
+        width: 38%;
+    }
+
     .analysis-manage-flex {
         display: block;
     }
@@ -61,10 +66,24 @@
 }
 
 @media all and (max-width: 1600px) {
+
+    .manage-jobs-data {
+        display: block;
+        margin: 0;
+    }
+
+    .mj-left, .mj-right{
+        width: 100%;
+        margin: 0;
+    }
+
     .manage-ul .vac-analis {
         width: 80%;
     }
 
+    .mj-left {
+        margin: 0 0 20px 0;
+    }
 
     .about-text h1 {
         font-size: 35px;
@@ -1037,6 +1056,12 @@
     .man-job > li > div, .manage-ul .vac-analis {
         width: 100%;
         max-width: 100%;
+        border-radius: 0;
+    }
+
+    .man-job .vac-analis::before {
+        top: -8px;
+        left: 50%;
     }
 
     .re-title {
@@ -1086,8 +1111,11 @@
     }
 
     .flex-404 {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
     }
+
+
 
     .flex-404 .f-1 > div span {
         font-size: 18px;
@@ -1452,6 +1480,44 @@
 
 @media all and (max-width: 550px) {
 
+    .about-container {
+        display: block;
+    }
+
+    .about-left-img > span {
+        display: none;
+    }
+
+    .card-about, .card-about-cat {
+        position: initial;
+        z-index: initial;
+    }
+
+    .card-about-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .about-text h1 {
+        margin: 20px 0 0 0;
+    }
+
+    .about-text a {
+        margin: 0;
+    }
+
+    .asi {
+        display: none;
+    }
+
+    .about-left-img {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .label-check-block > div {
         width: 100%;
     }
@@ -1666,6 +1732,10 @@
 }
 
 @media all and (max-width: 500px) {
+
+    .mj-stat-mini {
+        padding: 26px 16px;
+    }
 
     .res-prof {
         font-size: 17px;

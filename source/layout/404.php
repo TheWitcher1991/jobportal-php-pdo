@@ -87,7 +87,7 @@ Head('Ошибка 404');
             </div>
             <div class="f-2">
                 <span>
-                    <img src="/static/image/404.svg" alt="">
+                    <img src="/static/image/404_2.svg" alt="">
                 </span>
 
             </div>

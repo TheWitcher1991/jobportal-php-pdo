@@ -193,6 +193,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['password']) && $_SESSION['type'] 
     }*/
 
     Head($r['name'] . ' - добавить вакансию');
+
+    $profileNavigator = [
+        'Профиль' => '/profile',
+        'Мои вакансии' => '/manage-job',
+        "Добавить вакансию" => 'create-job'
+    ];
 ?>
 <body class="profile-body">
 

@@ -1,3 +1,74 @@
+.no-file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 4px;
+    color: #2d2d2d;
+    padding: 64px 0;
+}
+
+.no-file img {
+    width: 225px;
+}
+
+.el-steps {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 36px 0 30px 0;
+}
+
+.el-step {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.el-step-process::after {
+    content: '';
+    background-color: #d3d7e1;
+    height: 2px;
+    width: 100%;
+    top: 12px;
+    position: absolute;
+    left: 50%;
+    right: -50%;
+}
+
+
+.el-step .el-step_icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    color: #d3d7e1;
+    border: 2px solid #d3d7e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.el-step .el-step_text {
+    color: #d3d7e1;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 6px 0 0 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.step-active .el-step_text, .step-active .el-step_icon {
+    color: #1967d2;
+    border-color: #1967d2;
+}
+
 .ql-toolbar.ql-snow {
     background: #f5f6f8;
     border-radius: 8px 8px 0 0;
@@ -986,7 +1057,7 @@ select, option {
 }
 
 .flex-404 .f-1 > div p {
-    color: #202124;
+    color: #1967d2;
     font-size: 48px;
     font-weight: 700;
     margin: 0;
@@ -1208,9 +1279,20 @@ select, option {
     border-radius: 4px;
 }
 
+.profile-base .filter-main {
+    border: 0;
+    box-shadow: 0 15px 50px 0 rgb(160 163 189 / 10%);
+    padding: 0 30px;
+}
+
 .filter-main .filter-layout {
     border-bottom: 1px solid #e0e0e0;
     padding: 20px 30px;
+}
+
+.profile-base .filter-main .filter-layout {
+    border-bottom: 1px solid #f5f8fa;
+    padding: 20px 0;
 }
 
 .filter-main .filter-layout:last-of-type {
@@ -1795,11 +1877,13 @@ select, option {
 .paginator {
     display: flex;
     align-items: center;
-    background: #fff;
-    border-radius: 6px;
-    border: 1px solid #e0e0e0;
+    background: transparent;
+    /*border-radius: 6px;
+    border: 1px solid #e0e0e0;*/
     padding: 16px;
     justify-content: center;
+
+    border-radius: 10px;
 }
 
 .paginator a {
@@ -2940,9 +3024,9 @@ input[type="submit"]:disabled:hover {
 }
 
 .empl-title {
-    display: block;
-    padding: 1px 6px;
-    width: 257px;
+    padding: 2px 7px;
+    display: inline-block;
+    width: fit-content;
     background-color: #1967D2;
     color: #fff;
     font-style: normal;
@@ -2972,21 +3056,25 @@ input[type="submit"]:disabled:hover {
 }
 
 .emp-t {
-    padding: 20px 40px 0 30px;
+    padding: 12px 40px 0 30px;
     display: flex;
     align-items: center;
 }
 
 .emp-i {
-    width: 190px;
+    width: 150px;
     display: flex;
-    height: 80px;
+    height: 135px;
     border-radius: 4px;
     display: flex;
     align-items: center;
-    background: #eaeef4;
     color: #2c5794;
     justify-content: center;
+}
+
+.emp-i img {
+    width: 100%;
+    height: 100%;
 }
 
 .emp-i i {

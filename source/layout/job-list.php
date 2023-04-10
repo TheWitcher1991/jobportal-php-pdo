@@ -185,7 +185,7 @@ if (isset($_GET['key']) and isset($_GET['loc'])) {
                             global $l;
                             $l = $stmt->fetch();
                             ?>
-                            <span class="hs-h">Свежие вакансии - <? echo $l['text']; ?></span>
+                            <span class="hs-h">Свежие вакансии — <? echo $l['text']; ?></span>
                             <div class="header-input-container">
                                 <div class="hi-field">
                                     <i class="mdi mdi-magnify"></i>
@@ -206,7 +206,7 @@ if (isset($_GET['key']) and isset($_GET['loc'])) {
                                 global $l;
                                 $l = $stmt2->fetch();
                             ?>
-                                <span class="hs-h">Свежие вакансии - <? echo $l['name']; ?></span>
+                                <span class="hs-h">Свежие вакансии — <? echo $l['name']; ?></span>
                                 <div class="header-input-container">
                                     <div class="hi-field">
                                         <i class="mdi mdi-magnify"></i>

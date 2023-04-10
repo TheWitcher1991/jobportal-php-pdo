@@ -26,12 +26,13 @@
 
         <div class="mm-list">
             <ul>
-                <li><a href="/"><i class="mdi mdi-home-outline"></i> Главная <i></i></a></li>
-                <li><a href="/job-list/?loc=stav"><i class="mdi mdi-content-copy"></i> Вакансии в Ставропольском крае <i></i></a></li>
+                <li><a href="/"><i class="mdi mdi-home-variant-outline"></i> Главная <i></i></a></li>
+                <li><a href="/job-list/?loc=stav"><i class="mdi mdi-database-outline"></i> Вакансии в Ставропольском крае <i></i></a></li>
+                <li><a href="/job-list/"><i class="mdi mdi-earth"></i> Вакансии по России <i></i></a></li>
                 <li><a href="/company-list"><i class="mdi mdi-briefcase-outline"></i> Компании <i></i></a></li>
-                <li><a href="/resume-list"><i class="mdi mdi-file-account"></i> Резюме студентов <i></i></a></li>
-                <li><a href="/faculty"><i class="mdi mdi-account-school-outline"></i> Факультеты <i></i></a></li>
-                <li><a href="/employer"><i class="mdi mdi-phone-alert-outline"></i> Контакты <i></i></a></li>
+                <li><a href="/resume-list"><i class="mdi mdi-school-outline"></i> Резюме студентов <i></i></a></li>
+                <li><a href="/faculty"><i class="mdi mdi-home-city-outline"></i> Факультеты <i></i></a></li>
+                <li><a href="/employer"><i class="mdi mdi-help-circle-outline"></i> Контакты <i></i></a></li>
             </ul>
         </div>
     </div>
@@ -83,8 +84,8 @@
             <h6>Студентам</h6>
             <div class="block-i-cnt">
                 <ul>
-                    <li><a href="/create/user">Добавить резюме</a></li>
-                    <li><a href="/job-list?loc=stav">Каталог вакансий</a></li>
+                    <li><a href="http://stgaujob.ru/job-list?loc=stav">Вакансии на Ставрополье</a></li>
+                    <li><a href="/job-list">Каталог вакансий</a></li>
                     <li><a href="/company-list">Каталог компаний</a></li>
                 </ul>
             </div>
@@ -113,6 +114,7 @@
     </div>
 </footer>
 <!-- / Footer -->
+
 
 <section id="loader-site">
     <div class="sk-circle-bounce">
@@ -156,7 +158,7 @@
 <script language="JavaScript" src="/static/scripts/region.js?v=<?= date('YmdHis') ?>"></script>
 
 
-<script language="JavaScript" src="/static/scripts/index.js?v=<?= date('YmdHis') ?>"></script>
+<script language="JavaScript" src="/static/scripts/bin/index.module.js?v=<?= date('YmdHis') ?>"></script>
 
 
 

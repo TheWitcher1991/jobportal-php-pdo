@@ -223,6 +223,18 @@ if (!isset($_SESSION['id']) && !isset($_SESSION['password'])) {
                         </div>
                         <div class="tabs-item">
                             <div class="tabs-form tb-si-a tabs-act">
+
+                                <div class="el-steps">
+                                    <div class="el-step step-active el-step-process">
+                                        <div class="el-step_icon">1</div>
+                                        <div class="el-step_text">Заполнение <br /> данных</div>
+                                    </div>
+                                    <div class="el-step">
+                                        <div class="el-step_icon">2</div>
+                                        <div class="el-step_text">Подтверждение <br /> email</div>
+                                    </div>
+                                </div>
+
                                 <form role="form" class="form-create-company" method="post">
                                     <div class="flex-h">
                                         <div class="flex f-n">

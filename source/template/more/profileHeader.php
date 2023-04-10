@@ -29,6 +29,26 @@ if ($_SESSION['type'] == 'company') {
             </span>
         </div>
 
+        <!--<div class="nav-list-wrap">
+
+            <?php
+
+            if (!empty($profileNavigator)) {
+
+                foreach ($profileNavigator as $val => $key) {
+
+                    echo '<a class="nl-link" href="'.$key.'">'.$val.'</a>';
+                    echo '<span class="nl-split">/</span>';
+
+                }
+
+            }
+
+
+            ?>
+
+        </div>-->
+
     </div>
     <div class="profile-name">
         <div>

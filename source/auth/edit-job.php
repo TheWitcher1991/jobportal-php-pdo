@@ -23,6 +23,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['password']) && $_SESSION['type'] 
 
 
     Head($r['name'] . ' - изменить вакансию');
+
+    $profileNavigator = [
+        'Профиль' => '/profile',
+        'Мои вакансии' => '/manage-job',
+        'Редактировать вакансию - '.$jo['title'] => '#',
+    ];
 ?>
 <body class="profile-body">
 
@@ -39,7 +45,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['password']) && $_SESSION['type'] 
             <div class="section-nav-profile">
                 <span><a href="/profile">Профиль</a></span>
                 <span><i class="fa-solid fa-chevron-right"></i></span>
-                <span>Редактировать вакансию</span>
+                <span>Редактировать вакансию - <?php echo $jo['title']; ?></span>
             </div>
 
             <div class="errors-block">

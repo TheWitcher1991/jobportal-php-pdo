@@ -563,7 +563,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
 
 <?php require('template/more/profileFooter.php'); ?>
 
-<script src="/static/scripts/chat.js?v=<?= date('YmdHis') ?>"></script>
+<script src="/static/scripts/bin/chat.module.js?v=<?= date('YmdHis') ?>"></script>
 <script>
     function deleteForm(){document.querySelector('#auth').remove()}
     function clearUrl(){document.querySelector('.profile-body').innerHTML+=`

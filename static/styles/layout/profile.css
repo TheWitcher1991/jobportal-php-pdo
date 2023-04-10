@@ -721,7 +721,7 @@
 }
 
 .man-job > li {
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 15px 50px 0 rgb(160 163 189 / 10%);
     background: #fff;
     justify-content: space-between;
@@ -751,17 +751,32 @@
     position: relative;
 }
 
+
 .man-job .vac-analis {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: inherit;
-    background: #f4f1f4;
+    background: linear-gradient(135deg, #1967d2 10%, #0050CF 100%);
     width: 45%;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.man-job .vac-analis::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    transform: translateX(50%) rotate(45deg);
+    top: 35px;
+    left: -16px;
 }
 
 .man-job .va-top {
-    border-bottom: 1px solid #c9bdbd;
+    border-bottom: 1px solid #FFFFFF21;
 }
 
 .man-job .va-bot {
@@ -776,11 +791,13 @@
     padding: 6px 0;
     text-align: center;
     display: block;
-    color: #1967d2;
+    color: #fff;
     font-size: 15px;
     transition: all 0.2s ease-in-out;
     border-radius: 4px;
-    border: 1px solid #1967d2;
+    background-color: #FFFFFF21;
+    backdrop-filter: blur(5px);
+    border: 1px solid #FFFFFF1A;
 }
 
 .man-job .va-bot .man-bth {
@@ -788,12 +805,14 @@
     text-align: center;
     cursor: pointer;
     display: block;
-    color: #1967d2;
+    color: #fff;
     font-size: 15px;
     transition: all 0.2s ease-in-out;
     border-radius: 4px;
-    border: 1px solid #1967d2;
     flex: 1;
+    background-color: #FFFFFF21;
+    backdrop-filter: blur(5px);
+    border: 1px solid #FFFFFF1A;
 }
 
 .man-job .va-bot .man-red {
@@ -826,8 +845,8 @@
 }
 
 .man-job .va-bot a:hover,.man-job .va-bot .man-bth:hover, .man-job .va-bot .man-bth-mini:hover {
-    background: #1967d2;
-    color: #fff;
+    background: #fff;
+    color: #1967d2;
 }
 
 .man-job .va-bot a:first-of-type {
@@ -843,13 +862,13 @@
     display: flex;
     margin: 0 0 10px 0;
     font-size: 15px;
-    color: #555;
+    color: #fff;
     align-items: center;
     justify-content: space-between;
 }
 
 .man-job .va-top span m {
-    color: #222;
+    color: #fff;
 }
 
 .manage-ul .placeholder {
@@ -1731,12 +1750,33 @@ input.is-invalid {
     height: 65px;
 }
 
+.nav-list-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-wrap a {
+    color: #6a7a98;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+
+.nav-list-wrap span {
+    font-size: 14px;
+    margin: 0 12px;
+    display: block;
+    color: #d3d7e1;
+}
+
 .n-i-b {
     display: flex;
     align-items: center;
     color: #1967d2;
     cursor: pointer;
     font-size: 22px;
+    margin: 0 36px 0 0;
 }
 
 .profile-name {

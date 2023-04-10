@@ -1,23 +1,7 @@
 <?php
 
-if (isset($_POST['send'])) {
-
-    if ($_POST['text']) {
-        $app->execute("INSERT INTO `search` (`text`, `date`) VALUES(:t, :d)", [
-            ':t' => $_POST['text'],
-            ':d' => date('Y-m-d')
-        ]);
-    }
-
-    if (!empty($_POST['text']) and !empty($_POST['loc'])) exit(header('location: /job-list?key='.$_POST['text'].'&loc=' . $_POST['loc']));
-    else if (!empty($_POST['text']) and empty($_POST['loc'])) exit(header('location: /job-list?key=' . $_POST['text']));
-    else if (empty($_POST['text']) and !empty($_POST['loc'])) exit(header('location: /job-list?loc=' . $_POST['loc']));
-}
-
 
 Head('СтГАУ Агрокадры');
-
-
 
 
 
@@ -562,9 +546,9 @@ Head('СтГАУ Агрокадры');
                     <span><? echo $app->count("SELECT * FROM `users`"); ?> резюме</span>
                     <div>
 
-                        <? if (isset($_SESSION['id']) && $_SESSION['type'] == 'company') { ?>
+                        <? if (isset($_SESSION['id'])) { ?>
                             <?php
-                            $sql = $app->query("SELECT * FROM `users` WHERE `ban` = 0 ORDER BY `view` DESC LIMIT 6");
+                            $sql = $app->query("SELECT * FROM `users` WHERE `ban` = 0 AND `surname` != 'Свазян' ORDER BY `view` DESC LIMIT 6");
                             $i = 1;
                             while ($r = $sql->fetch()) {
 

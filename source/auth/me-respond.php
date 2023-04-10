@@ -13,6 +13,8 @@ if (isset($_SESSION['surname']) && isset($_SESSION['password']) && $_SESSION['ty
 
     Head('Мои отклики');
 
+
+
     ?>
 
     <body class="profile-body">

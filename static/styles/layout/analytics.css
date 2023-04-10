@@ -91,7 +91,7 @@
 
 .al-stats > ul > li .as-t span {
     color: #fff;
-    display: block;
+    display: flex;
     text-align: left;
 }
 

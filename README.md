@@ -1,3 +1,3 @@
 # Центр трудоустройства и развития карьеры СтГАУ Агрокадры
 
-<a href="stgaujob.ru">stgaujob.ru</a>
+<a href="http://stgaujob.ru/">stgaujob.ru</a>

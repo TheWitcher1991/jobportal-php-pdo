@@ -1,37 +1,139 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST' && !isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+if ($_SERVER['HTTP_ACCEPT'] !== 'text/event-stream' && !isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !isset($_SERVER['REQUEST_METHOD'])) {
     $app->notFound();
     exit;
 }
 
+$time = date('r');
+
 if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
     try {
-
-
 
         $tmp_path = $_SERVER['DOCUMENT_ROOT'] . '/static/tmp/';
         $path = $_SERVER['DOCUMENT_ROOT'] . '/static/image/chat/';
 
-        function getOptions()
-        {
-            $act = (isset($_POST['act'])) ? (int) $_POST['act'] : null;
-            $id = (isset($_POST['id'])) ? (int) $_POST['id'] : null;
-            $text = (isset($_POST['text'])) ? $_POST['text'] : null;
+        function load($PDO, $app) {
+            $id = intval($_GET['id']);
+
+            $status = 'Не в сети';
+
+            $stmt = $PDO->prepare("SELECT * FROM `chat` WHERE `id` = ?");
+            $stmt->execute([$id]);
+            if ($stmt->rowCount() > 0) {
+                $chat = $stmt->fetch();
+                $stmt = $PDO->prepare("SELECT * FROM `msg` WHERE `chat_id` = ? ORDER BY `id` DESC");
+                $stmt->execute([$chat['id']]);
+                if ($stmt->rowCount() > 0) {
+                    $count = $stmt->rowCount();
+                    $li = "";
+                    $data = [];
+                    while ($r = $stmt->fetch()) {
+
+                        $data[$r['date']][] = $r;
+
+                        /*if ($r['user_id'] == $_SESSION['id']) {
+                            $li .= '<li class="me-block chat-item">
+                                <div class="ch-b">
+                                    <div class="text-box">' . $r['text'] . '</div>
+                                    <div class="time-box">' . $r['time'] . ', ' . $r['day'] . '</div>
+                                </div>
+                            </li>';
+                        } else {
+                            $li .= '<li class="for-block chat-item"><div class="ch-b"><div class="text-box">' . $r['text'] . '</div><div class="time-box">' . $r['time'] . ', ' . $r['day'] . '</div></div></li>';
+                        }*/
+                    }
+
+                    $monthes_ru = [
+                        1 => 'января',
+                        2 => 'февраля',
+                        3 => 'марта',
+                        4 => 'апреля',
+                        5 => 'мая',
+                        6 => 'июня',
+                        7 => 'июля',
+                        8 => 'августа',
+                        9 => 'сентября',
+                        10 => 'октября',
+                        11 => 'ноября',
+                        12 => 'декабря'
+                    ];
+
+
+                    foreach ($data as $home => $datum) {
+                        $new_ru = DateTime::createFromFormat('d.m.Y', $home)->format('d') . ' ' . $monthes_ru[(DateTime::createFromFormat('d.m.Y', $home)->format('n'))];
+                        $y = DateTime::createFromFormat('d.m.Y', $home)->format('Y');
+                        if ($y == date('Y')) {
+                            $li .= '<li class="chat-date-item"><span>'.$new_ru.'</li>';
+                        } else {
+                            $li .= '<li class="chat-date-item"><span>'.$new_ru.' '.$y.'</li>';
+                        }
+                        foreach ($datum as $key => $r) {
+                            foreach ($r as $k => $v) {
+                                if ($r['user_id'] == $_SESSION['id'] && $r['user_type'] == $_SESSION['type']) {
+                                    $li .= '<li class="me-block chat-item">
+                                <!--<div class="edit-block"><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></div>-->
+                                <div class="ch-b">
+                                    <div class="text-box">' . $r['text'] . '</div>
+                                    <div class="time-box">' . $r['time'] . '</div>
+                                </div>    
+                            </li>';
+                                    break;
+                                } else {
+                                    $li .= '<li class="for-block chat-item"><div class="ch-b"><div class="text-box">' . $r['text'] . '</div><div class="time-box">' . $r['time'] . '</div></div></li>';
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                } else {
+                    $li = '<li class="me-block chat-item"><div class="ch-b"><div class="text-box">Нет сообщений</div>';
+                    $count = 0;
+                }
+
+                if ($_SESSION['type'] == 'company') {
+                    $nc = $app->rowCount("SELECT * FROM `online` WHERE `id` = :id AND `type` = :t", [
+                        ':id' => $chat['user_id'],
+                        ':t' => 'users'
+                    ]);
+                    if ($nc > 0) {
+                        $status = 'В сети';
+                    }
+                }
+                if ($_SESSION['type'] == 'users') {
+                    $nc = $app->rowCount("SELECT * FROM `online` WHERE `id` = :id AND `type` = :t", [
+                        ':id' => $chat['company_id'],
+                        ':t' => 'company'
+                    ]);
+                    if ($nc > 0) {
+                        $status = 'В сети';
+                    }
+                }
+            } else {
+                $li = '<li class="me-block chat-item"><div class="ch-b"><div class="text-box">Произошла ошибка</div>';
+                $count = 0;
+            }
 
 
             return array(
-                'act' => $act,
-                'id' => $id,
-                'text' => $text,
+                'list' => $li,
+                'status' => $status,
+                'count' => $count,
+                'code' => 'success'
             );
         }
 
-        function send($options, $PDO, $app, $Date, $Date_ru) {
-            $options = getOptions();
 
-            $id = intval($options['id']);
-            $text = XSS_DEFENDER($options['text']);
+        function send($PDO, $app, $Date, $Date_ru) {
+
+            $id = intval($_GET['id']);
+            $text = XSS_DEFENDER($_GET['text']);
+
+            $status = 'Не в сети';
 
             if ($_SESSION['type'] == 'users') {
                 $sql = "SELECT * FROM `users` WHERE `id` = :id";
@@ -73,6 +175,25 @@ if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
 
 
                     $cht = $stmt->fetch();
+
+                    if ($_SESSION['type'] == 'company') {
+                        $nc = $app->rowCount("SELECT * FROM `online` WHERE `id` = :id AND `type` = :t", [
+                            ':id' => $cht['user_id'],
+                            ':t' => 'users'
+                        ]);
+                        if ($nc > 0) {
+                            $status = 'В сети';
+                        }
+                    }
+                    if ($_SESSION['type'] == 'users') {
+                        $nc = $app->rowCount("SELECT * FROM `online` WHERE `id` = :id AND `type` = :t", [
+                            ':id' => $cht['company_id'],
+                            ':t' => 'company'
+                        ]);
+                        if ($nc > 0) {
+                            $status = 'В сети';
+                        }
+                    }
 
                     $app->execute("UPDATE `chat` SET 
                         `last` = :l, 
@@ -170,170 +291,51 @@ if (isset($_SESSION['id']) && isset($_SESSION['password'])) {
                         $count = 0;
                     }
 
+
+
+
                     return array(
                         'list' => $li,
+                        'status' => $status,
                         'count' => $count
                     );
                 }
+
+
             }
         }
 
-        function load($options, $PDO, $app) {
-            $options = getOptions();
 
-            $id = intval($options['id']);
+        $act = (int) $_GET['act'];
 
-            $stmt = $PDO->prepare("SELECT * FROM `chat` WHERE `id` = ?");
-            $stmt->execute([$id]);
-            if ($stmt->rowCount() > 0) {
-                $chat = $stmt->fetch();
-                $stmt = $PDO->prepare("SELECT * FROM `msg` WHERE `chat_id` = ? ORDER BY `id` DESC");
-                $stmt->execute([$chat['id']]);
-                if ($stmt->rowCount() > 0) {
-                    $count = $stmt->rowCount();
-                    $li = "";
-                    $data = [];
-                    while ($r = $stmt->fetch()) {
-
-                        $data[$r['date']][] = $r;
-
-                        /*if ($r['user_id'] == $_SESSION['id']) {
-                            $li .= '<li class="me-block chat-item">
-                                <div class="ch-b">
-                                    <div class="text-box">' . $r['text'] . '</div>
-                                    <div class="time-box">' . $r['time'] . ', ' . $r['day'] . '</div>
-                                </div>    
-                            </li>';
-                        } else {
-                            $li .= '<li class="for-block chat-item"><div class="ch-b"><div class="text-box">' . $r['text'] . '</div><div class="time-box">' . $r['time'] . ', ' . $r['day'] . '</div></div></li>';
-                        }*/
-                    }
-
-                    $monthes_ru = [
-                        1 => 'января',
-                        2 => 'февраля',
-                        3 => 'марта',
-                        4 => 'апреля',
-                        5 => 'мая',
-                        6 => 'июня',
-                        7 => 'июля',
-                        8 => 'августа',
-                        9 => 'сентября',
-                        10 => 'октября',
-                        11 => 'ноября',
-                        12 => 'декабря'
-                    ];
-
-
-
-
-                    foreach ($data as $home => $datum) {
-                        $new_ru = DateTime::createFromFormat('d.m.Y', $home)->format('d') . ' ' . $monthes_ru[(DateTime::createFromFormat('d.m.Y', $home)->format('n'))];
-                        $y = DateTime::createFromFormat('d.m.Y', $home)->format('Y');
-                        if ($y == date('Y')) {
-                            $li .= '<li class="chat-date-item"><span>'.$new_ru.'</li>';
-                        } else {
-                            $li .= '<li class="chat-date-item"><span>'.$new_ru.' '.$y.'</li>';
-                        }
-                        foreach ($datum as $key => $r) {
-                            foreach ($r as $k => $v) {
-                                if ($r['user_id'] == $_SESSION['id'] && $r['user_type'] == $_SESSION['type']) {
-                                    $li .= '<li class="me-block chat-item">
-                                <!--<div class="edit-block"><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></div>-->
-                                <div class="ch-b">
-                                    <div class="text-box">' . $r['text'] . '</div>
-                                    <div class="time-box">' . $r['time'] . '</div>
-                                </div>    
-                            </li>';
-                                    break;
-                                } else {
-                                    $li .= '<li class="for-block chat-item"><div class="ch-b"><div class="text-box">' . $r['text'] . '</div><div class="time-box">' . $r['time'] . '</div></div></li>';
-                                    break;
-                                }
-                            }
-                        }
-                    }
-
-                } else {
-                    $li = '<li class="me-block chat-item"><div class="ch-b"><div class="text-box">Нет сообщений</div>';
-                    $count = 0;
-                }
-            } else {
-                $li = '<li class="me-block chat-item"><div class="ch-b"><div class="text-box">Произошла ошибка</div>';
-                $count = 0;
-            }
-
-            return array(
-                'list' => $li,
-                'count' => $count
-            );
-        }
-
-        function getStatus($options, $PDO, $app) {
-            $status = 'Не в сети';
-            $text = XSS_DEFENDER($options['text']);
-
-            $id = intval($options['id']);
-
-            $stmt = $PDO->prepare("SELECT * FROM `chat` WHERE `id` = ?");
-            $stmt->execute([$id]);
-            if ($stmt->rowCount() > 0) {
-                $chat = $stmt->fetch();
-                if ($_SESSION['type'] == 'company') {
-                    $nc = $app->count("SELECT * FROM `online` WHERE `id` = $chat[user_id] AND `type` = 'users'");
-                    if ($nc > 0) {
-                        $status = 'В сети';
-                    }
-                }
-                if ($_SESSION['type'] == 'users') {
-                    $nc = $app->count("SELECT * FROM `online` WHERE `id` = $chat[company_id] AND `type` = 'company'");
-                    if ($nc > 0) {
-                        $status = 'В сети';
-                    }
-                }
-            }
-
-            return $status;
-        }
-
-        $options = getOptions();
-
-        $act = (int) $options['act'];
+        $echo = "";
 
         switch ($act) {
             case 1:
-                $echo = send(getOptions(), $PDO, $app, $Date, $Date_ru);
+                $echo = send($PDO, $app, $Date, $Date_ru);
                 break;
             case 2:
-                $echo = load(getOptions(), $PDO, $app);
-                break;
-            case 3:
-                $status = getStatus(getOptions(), $PDO, $app);
+                $echo = load($PDO, $app);
                 break;
         }
 
-
-
-        echo json_encode(array(
-            'code' => 'success',
-            'status' => $status,
-            'data' => $echo
-        ));
-
-        session_write_close();
-
-        exit;
+        echo "data: ".json_encode($echo)."\n\n";
+        if ($act === 1) echo "retry: 1000\n\n";
+        else echo "retry: 2000\n\n";
+        flush();
     } catch (Exception $e) {
-        echo json_encode(array(
-            'code' => 'error',
-            'message' => $e->getMessage()
-        ));
-        session_write_close();
 
-        exit;
+        $arr = [
+            'code' => $e->getMessage()
+        ];
+
+        echo "data: ".json_encode($arr)."\n\n";
+        flush();
     }
-
-} else {
-    $app->notFound();
 }
 
+session_write_close();
+
+flush();
+
+?>

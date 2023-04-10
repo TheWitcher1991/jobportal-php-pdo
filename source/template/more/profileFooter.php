@@ -5,7 +5,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-<script language="JavaScript" src="/static/scripts/index.js?v=<?= date('YmdHis') ?>"></script>
+<script language="JavaScript" src="/static/scripts/bin/index.module.js?v=<?= date('YmdHis') ?>"></script>
 
 <script language="JavaScript" src="/static/scripts/region.js?v=<?= date('YmdHis') ?>"></script>
 
@@ -172,7 +172,7 @@
 
             $("#tel").mask("+7 (999) 999-99-99");
 
-            $("#snils").mask("9999-9999-9999-9999");
+            $("#snils").mask("999-999-999 99");
 
 
 

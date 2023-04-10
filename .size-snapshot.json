@@ -1,0 +1,22 @@
+{
+  "index.module.js": {
+    "bundled": 22752,
+    "minified": 14990,
+    "gzipped": 3707
+  },
+  "profile.module.js": {
+    "bundled": 16879,
+    "minified": 10003,
+    "gzipped": 1823
+  },
+  "auth.module.js": {
+    "bundled": 10781,
+    "minified": 7313,
+    "gzipped": 1627
+  },
+  "chat.module.js": {
+    "bundled": 14683,
+    "minified": 12128,
+    "gzipped": 1742
+  }
+}
